@@ -99,31 +99,90 @@ git add docs/screenshots; git commit -m "Add screenshots"; git push
 목록에 한 줄 들어가면 몇 달씩 사람이 들어옵니다. MCP 서버 목록은 지금 계속 커지는 중이라
 받아들여질 가능성도 높습니다.
 
-대상 (GitHub에서 `awesome-mcp-servers` 로 검색해 별 많은 것 2~3개):
+### 공통 방법 (GitHub 웹에서만, 설치 불필요)
 
-- `punkpeye/awesome-mcp-servers`
-- `wong2/awesome-mcp-servers`
+1. 대상 저장소의 `README.md` 를 연다
+2. 오른쪽 위 **연필 아이콘(✏)** → 자동으로 내 계정에 복사본(fork)이 생긴다
+3. 아래 지정된 분류를 찾아 **알파벳 순서 맞는 자리**에 한 줄 추가
+4. 맨 아래 `Commit changes` → **`Create a new branch`** 선택 → `Propose changes`
+5. `Create pull request` → 제목 입력 → 생성
 
-**하는 법** (GitHub 웹에서만 하면 됩니다)
+PR 제목은 셋 다 이걸로:
+```
+Add THANKYOU AI
+```
 
-1. 해당 저장소의 `README.md` 열기
-2. 오른쪽 위 **연필 아이콘(✏)** 클릭 → 자동으로 내 계정에 복사본(fork)이 만들어집니다
-3. 알맞은 분류(예: Fun, Lifestyle, Productivity)를 찾아 알파벳 순서에 맞게 한 줄 추가
+> **핵심 규칙:** 세 목록 모두 형식이 조금씩 다릅니다. 넣을 자리의 **위아래 줄을 그대로 흉내내는 게
+> 가장 안전합니다.** 아래 한 줄을 넣되, 주변 줄이 다른 표기를 쓰면 그쪽에 맞추세요.
+
+---
+
+### ① wong2/awesome-mcp-servers — 4,400★ · 가장 쉬움
+
+- 분류: **`Community Servers`**
+- 자리: 알파벳 순. `T` 로 시작하는 항목들 사이
+- 기여 규칙 문서 없음. 형식만 맞추면 됩니다
 
 ```markdown
-- [THANKYOU AI](https://github.com/kimppi-1/thankyou-ai) 🐍 🏠 - Logs the gratitude you express to your AI, on a 1990s CRT. The model can read its own ledger and record thanks itself.
-```
-> 이모지는 그 목록이 쓰는 표기를 그대로 따라하세요(보통 🐍=Python, 🏠=로컬 전용).
-> 목록마다 규칙이 다르니 **위아래 줄을 그대로 흉내내는 게 안전합니다.**
-
-4. 아래 `Commit changes` → `Create a new branch` 선택 → **Propose changes**
-5. `Create pull request` → 제목과 설명에 한 줄씩
-
-```
-Add THANKYOU AI — gratitude ledger the model can read and write
+- **[THANKYOU AI](https://github.com/kimppi-1/thankyou-ai)** - Logs the gratitude you express to your AI, on a 1990s CRT. The model reads its own ledger and records thanks itself.
 ```
 
-- [ ] 2곳 이상 PR 보내기
+- [ ] PR 보냄
+
+---
+
+### ② appcypher/awesome-mcp-servers — 5,800★
+
+- 분류: **`📝 Note Taking`**
+- 자리: **해당 분류의 맨 아래** (이 목록은 "bottom of the relevant category" 규칙)
+- 규칙: 건당 PR 하나, 철자 확인, 줄 끝 공백 제거
+
+```markdown
+- [THANKYOU AI](https://github.com/kimppi-1/thankyou-ai) - Logs the gratitude you express to your AI, on a 1990s CRT. The model reads its own ledger and records thanks itself.
+```
+> 이 목록은 항목에 로고 `<img>` 를 붙이는 줄이 섞여 있습니다. 없어도 되지만,
+> 주변이 전부 로고를 달고 있으면 맞춰 주는 편이 통과가 빠릅니다.
+
+- [ ] PR 보냄
+
+---
+
+### ③ punkpeye/awesome-mcp-servers — 98,000★ · **조건 있음**
+
+가장 큰 목록이지만 기여 규칙에 이런 조항이 있습니다.
+
+> PRs must include a backlink to your https://glama.ai/mcp/servers MCP server listing.
+> It can be a backlink from your website or badge included in the README.md.
+> Backlinks are checked before merging the PR.
+
+즉 **glama.ai 에 서버를 먼저 등록하고, 내 README 에 그쪽 배지나 링크를 달아야** 받아줍니다.
+실제로 기존 항목들이 전부 `glama.ai` 배지를 달고 있습니다. 거래 조건이 명시돼 있는 셈입니다.
+
+**할지 말지는 판단이 필요합니다.**
+
+| | |
+|---|---|
+| 얻는 것 | 9.8만 별 목록 등재 (다른 둘의 10배 규모) + glama.ai 디렉터리 자체 노출 |
+| 내주는 것 | 내 README 에 제3자 배지 한 줄 |
+
+하기로 했다면 순서는 이렇습니다.
+
+1. https://glama.ai/mcp/servers 에서 저장소 등록
+2. 거기서 주는 배지 마크다운을 `README.md` 상단에 추가하고 푸시
+3. 분류 **`🛠️ Other Tools and Integrations`** 에 알파벳 순으로 한 줄 추가
+
+```markdown
+- [kimppi-1/thankyou-ai](https://github.com/kimppi-1/thankyou-ai) 🐍 🏠 - Logs the gratitude you express to your AI, on a 1990s CRT. The model can read its own ledger and record thanks itself.
+```
+> 이 목록의 범례: `🐍` 파이썬, `🏠` 로컬 전용. 둘 다 맞습니다.
+
+4. PR 설명에 백링크를 어디에 달았는지 한 줄 적기 (규칙에 명시돼 있습니다)
+
+- [ ] 조건 확인하고 결정 → 하기로 했으면 PR 보냄
+
+---
+
+- [ ] ①②는 조건 없음. 먼저 보내세요
 
 ---
 
