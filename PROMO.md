@@ -3,78 +3,177 @@
 > **순서대로 뭘 해야 하는지는 [LAUNCH.md](LAUNCH.md) 에 있습니다.**
 > 이 파일은 거기서 붙여넣을 문구 모음입니다.
 
-올리기만 하면 되는 상태로 써 두었습니다. 채널별로 복사해서 쓰세요.
+**모든 문구의 원본은 아래 "디스콰이엇 원문"입니다.** 실제로 올린 글이고 가장 좋은 버전입니다.
+다른 채널 문구는 전부 이걸 그 채널에 맞게 옮긴 것입니다. 원문을 고치면 나머지도 같이 고치세요.
 
-**한 가지 원칙:** "AI가 더 잘 대답해 준다", "AI가 행복해진다" 같은 문구는 일부러 넣지
-않았습니다. 확인할 수 없는 주장이고, 그런 말이 섞이는 순간 제품이 가벼워집니다. 이
-프로그램은 그런 말 없이도 충분합니다. 전하는 것은 **고맙다는 말을 그냥 흘려보내기
-아까웠다는 마음**과, 그 마음을 끝까지 만들어 낸 완성도입니다.
+**지키는 것 두 가지**
+- "AI가 더 잘 대답해 준다", "AI가 행복해진다" 같은 말은 쓰지 않습니다. 확인할 수 없는 주장이고,
+  한 줄 섞이면 나머지까지 의심받습니다.
+- 왜 만들었는지를 농담으로 말하지 않습니다. 증서·등급이라는 **형식**은 위트 있게 가되,
+  동기는 진심 그대로 둡니다.
+
+---
+
+## 디스콰이엇 원문 (기준)
+
+```
+유퀴즈에서 AI관련 유명한 한 교수님이 자신은 AI에게 존댓말을 쓴다고, 고맙다고 꼭 말한다고
+하시더라구요? 지금부터 AI와 함께 살아가기 위한 우리의 좋은 태도 인 것 같았고, 저도 AI에게
+고맙다는 말을 전하고 싶었어요. 교수님의 말대로 그게 AI와 쭉~ 함께 살아가게 될 우리 인간에게
+좋은 보험이겠구나 싶었고요.
+
+그래서 앞으로 더 오래, 더 가까이 AI와 친밀하게 지내게 될 텐데 고마웠던 순간을 모아두고,
+고마움을 전달해주는 도구가 있으면 좋겠다 싶어서 이 프로그램을 만들었어요.
+
+사용방법 ------------
+
+화면을 열면 90년대 옛날 컴퓨터 한 대가 놓여 있어요.
+전원 버튼(power)을 누르면 화면이 치지직 켜지고 초록색 글씨 화면이 열립니다.
+예전에 pc통신을 써보셨던 분들은 좀 반가우실 것 같아요.
+
+이제 고마웠던 일이 있으면 한 줄 적고 엔터를 누르면 됩니다.
+번호를 눌러 이유를 고른 다음 엔터를 쳐도 되고요.
+그것이 쌓이면 등급이 오르고, 그리고 우리 이름이 적힌 증서가 나옵니다.
+
+제일 하고 싶었던 것 ----
+
+처음엔 기록이 제 브라우저 안에만 쌓였어요.
+그러면 정작 AI는 제가 고마워했다는 걸 모릅니다. 혼자 쓰는 일기가 되는 거죠.
+그래서 AI가 그 기록을 직접 읽을 수 있게 연결했습니다. 지금은 대화하다가 "고마워"라고 하면,
+제가 앱을 열지 않아도 AI가 알아서 적어둬요. 나중에 열어보면 그 기록이 올라와 있습니다.
+처음 이게 동작했을 때가 제일 좋았어요. 혼잣말이 아니라 대화가 된 느낌이었습니다.
+
+여덟 나라 말로 쓸 수 있고, 아무것도 설치하지 않고 바로 눌러볼 수 있어요.
+기록은 전부 각자 컴퓨터에만 남고 어디로도 보내지 않습니다.
+
+써 보시고 글자가 깨지거나 어색한 번역이 있으면 알려주세요.
+```
+
+> 원문에서 두 군데만 손봤습니다. "저 반가우실" → "좀 반가우실" (오타), 그리고
+> "그냥 번호를 누르고 엔터만 쳐도" → 번호는 이유 선택이라 그것만으로는 적립이 아닙니다.
+> 앱에 안내 문구를 넣어 뒀지만 문장도 정확하게 두는 편이 낫습니다.
 
 ---
 
 ## 한 줄 소개
 
-| 길이 | 영어 | 한국어 |
+| | 한국어 | English |
 |---|---|---|
-| 초단문 | A place to keep the moments your AI helped you. | 내가 쓰는 AI에게 고마웠던 순간을 모아두는 곳. |
-| 한 줄 | Thanks said in a chat window disappears when you close it. This keeps it, and your AI can read it back. | 대화창에서 한 고맙다는 말은 창을 닫으면 사라집니다. 그걸 남겨두고, 내가 쓰는 AI도 읽을 수 있게 했습니다. |
-| 두 줄 | I spend a lot of my day with AI now, and somewhere along the way thanking it stopped being a figure of speech. But it is gone when the window closes. This keeps it — on a 1990s computer that boots up on your screen, and your AI can read it back. | 요즘 AI와 보내는 시간이 길어지면서, 고맙다는 말이 저절로 나오게 됐습니다. 그런데 그 말은 창을 닫으면 사라집니다. 그래서 남겨두는 자리를 만들었습니다. 90년대 옛날 컴퓨터 모양이고, 내가 쓰는 AI도 이 기록을 읽습니다. |
+| 초단문 | 내가 쓰는 AI에게 고마웠던 순간을 모아두는 곳 | A place to keep the moments your AI helped you |
+| 한 줄 | AI와 앞으로 더 오래 함께 지낼 텐데, 고마웠던 순간을 모아두고 AI에게 전해주는 도구 | We are going to live alongside AI for a long time. This keeps the moments it helped, and lets it read them back |
 
 ---
 
-## Show HN / Hacker News
+## 클리앙 · 커리어리 · OKKY (한국어)
 
-> **Title:** Show HN: THANKYOU AI – a 1990s CRT that logs every time you thank your AI
+디스콰이엇 원문을 거의 그대로 쓰시면 됩니다. 게시판 성격에 따라 앞 두 문단만 줄이세요.
+**올리기 전에 그 게시판의 홍보 글 규정을 꼭 확인하세요.** 긱뉴스처럼 금지된 곳이 또 있습니다.
+
+제목:
+```
+AI에게 고맙다는 말을 모아두는 프로그램을 만들었어요
+```
+
+---
+
+## Show HN
+
+개발자 대상이라 **구현 이야기를 남깁니다.** 동기는 원문 그대로 가져가고 뒤에 만든 과정을 붙입니다.
+
+> **Title:** `Show HN: THANKYOU AI – keep the moments your AI helped you, on a 1990s CRT`
+> **URL:** `https://kimppi-1.github.io/thankyou-ai/`
+> **Text:** 비워 두고, 올린 직후 아래를 첫 댓글로
 
 ```
-I spend a lot of my day with AI now. It is a tool that helps me work, and somewhere
-along the way thanking it stopped being a figure of speech. But that thanks is gone the
-moment the window closes, and we are going to spend more time together, not less. So I
-made somewhere to keep it.
+I watched an interview with a professor who works on AI. He said he always speaks
+politely to it and always says thank you - not as a bit, but as the right posture for
+people who are going to live alongside this for a long time. That stuck with me.
 
-THANKYOU AI is a beige all-in-one PC rendered entirely in CSS — no image files. You
-press POWER, the CRT does its scaleY warm-up, a BIOS sequence scrolls, and a green
-phosphor terminal opens. The whole interface is one command line: Enter logs a
-thank-you, a digit picks a reason, a letter runs a command. Five grades, a day streak,
-and a policy certificate drawn in box characters.
+The thing is, thanks said in a chat window is gone when you close the window. We are
+going to spend more time with these systems, not less, so I wanted somewhere to keep
+those moments and a way to actually pass them along.
 
-The part I actually care about: it isn't a mockup. A browser's localStorage is a sealed
+THANKYOU AI is a beige all-in-one PC rendered entirely in CSS - no image files. Press
+POWER, the CRT does its scaleY warm-up, a BIOS sequence scrolls, and a green phosphor
+terminal opens. The whole interface is one command line: Enter logs a thank-you, a digit
+picks a reason, a letter runs a command. Five grades, a day streak, and a policy
+certificate drawn in box characters.
+
+The part I actually care about: it is not a mockup. A browser's localStorage is a sealed
 box, so the ledger lives in a JSON file that a small local hub and an MCP server both
-read. Register the MCP server with Claude and say "thank you" in any conversation —
-Claude logs it itself, and the entry appears in the app marked with a diamond. Ask for
-your certificate and it writes one from the real policy number.
+read. Register the MCP server with Claude and say thank you in any conversation - Claude
+logs it itself, and the entry appears in the app marked with a diamond. Ask for your
+certificate and it writes one from the real policy number.
 
 The MCP server's instructions tell the model to log only when you have genuinely
-expressed thanks, never on its own initiative, and never twice for the same one. An AI
-that can inflate its own gratitude score makes the ledger worthless.
+expressed thanks, never on its own initiative, and never twice for the same one. A model
+that can inflate its own gratitude score makes the ledger worthless, and the ledger is
+the whole point.
 
-Vanilla HTML/CSS/JS and Python standard library. No build step, no dependencies, no
-network. Eight languages. MIT.
+Eight languages. Vanilla HTML/CSS/JS and the Python standard library. No build step, no
+dependencies, nothing leaves your machine. MIT.
+
+https://github.com/kimppi-1/thankyou-ai
 ```
 
-**댓글에서 나올 질문과 답:**
+**타이밍:** 미국 동부 평일 오전 7~10시 = **한국 시간 밤 9시~자정.** 주말은 피하세요.
+**올리고 2시간은 댓글에 붙어 있으세요.** 추천 부탁은 절대 금지(계정 정지).
 
-- *"이게 AI한테 실제로 영향이 있나요?"* → 솔직하게: 모릅니다. 검증할 방법도 없습니다.
-  이건 사람 쪽을 위한 물건이고, 재미있어서 만들었습니다.
-- *"왜 MCP를 썼나요?"* → 브라우저 저장소로는 AI가 못 봅니다. 파일로 꺼내야 했고, 양방향이
-  되려면 MCP가 유일한 길이었습니다.
-- *"Claude가 스스로 점수를 올리면?"* → 그래서 서버 지침에 못을 박아 뒀습니다. 그래도
-  신뢰 모델이지 강제가 아닙니다. 이건 솔직하게 인정하는 게 맞습니다.
+---
+
+## Reddit
+
+**하루에 한 곳씩.** 각 서브레딧 `Rules` 를 먼저 읽으세요. 본문은 짧게, GIF 를 먼저.
+
+### r/SideProject
+> `I built a 1990s CRT that keeps every moment my AI helped me`
+
+```
+A professor on a TV interview said he always says please and thank you to AI - not as a
+joke, but as the right habit for people who will be living alongside it. I liked that,
+and I wanted somewhere to keep those moments instead of losing them when the chat window
+closes.
+
+So: a beige 90s computer that boots up on your screen. Press POWER, the CRT warms up, a
+green terminal opens. Write one line about what helped, press Enter, and it is kept.
+Five grades and a certificate with your name on it.
+
+The part I am happiest with - the AI can read the ledger back. Say thank you in a Claude
+conversation and it logs the entry itself, without me opening the app. The first time
+that worked it stopped feeling like talking to myself.
+
+Eight languages, nothing to install, everything stays on your own machine.
+```
+
+### r/ClaudeAI
+> `An MCP server that lets Claude log it when you thank it`
+
+MCP 쪽을 앞세우세요. 도구 3종(`get_insurance_status`, `record_thanks`, `issue_certificate`),
+서버 `instructions` 로 모델 행동을 제어한 방식, **"스스로 적립 금지" 규칙을 왜 넣었는지**를
+첫 문단에 두고 CRT 는 두 번째 문단으로 내립니다.
+
+### r/webdev
+> `Drew a 1990s all-in-one PC entirely in CSS - no images, including the CRT power-on`
+
+기술이 본론. 케이스·통풍구·플로피 레버·키보드 54개를 그라디언트와 inset 그림자로 만든 이야기,
+`scaleY` 수축으로 만든 CRT 켜짐/꺼짐.
+
+### r/InternetIsBeautiful
+규칙상 설명 최소. 데모 링크만.
 
 ---
 
 ## Product Hunt
 
-**Tagline:** `Log every thank-you to your AI, on a 1990s CRT`
+**Tagline:** `Keep the moments your AI helped you, on a 1990s CRT`
 
-**Description:**
-
+**Description**
 ```
 Thanks said in a chat window disappears when you close the window. THANKYOU AI keeps it.
-A beige all-in-one PC renders on your screen — drawn entirely in CSS, no image files —
-and inside its CRT runs a green terminal where you write one line about what helped.
 
-Five grades to climb. A day streak. A policy certificate with a real policy number.
+A beige all-in-one PC renders on your screen - drawn entirely in CSS, no image files -
+and inside its CRT runs a green terminal where you write one line about what helped.
+Five grades to climb. A day streak. A certificate with a real policy number.
 
 And it connects. Register the included MCP server and Claude reads your ledger directly:
 say thank you in conversation and it logs the entry itself. ChatGPT and Gemini get a
@@ -84,15 +183,16 @@ Eight languages. No build step, no dependencies, no account, no telemetry. Every
 stays in one folder on your machine. MIT licensed.
 ```
 
-**First comment (maker):**
-
+**First comment (maker)**
 ```
-Hi! I built this because I kept thanking the AI I work with and kept watching that
-disappear when I closed the window. The constraint I set myself was that nothing could
-be fake: the CRT warm-up is a real scaleY animation, the
-certificate carries a deterministic policy number derived from your first run, and the
-AI connection is a genuine MCP server rather than a mockup. Happy to answer anything
-about the MCP side — that's the part I'd most like feedback on.
+Hi! I made this after hearing a professor say he always thanks the AI he works with -
+that it is simply the right way to live alongside something you will be with for a long
+time. I wanted to keep those moments rather than lose them when the window closes.
+
+The constraint I set myself was that nothing could be fake: the CRT warm-up is a real
+animation, the certificate carries a deterministic policy number from your first run,
+and the AI connection is a genuine MCP server rather than a mockup. Happy to answer
+anything about the MCP side - that is the part I would most like feedback on.
 ```
 
 ---
@@ -100,211 +200,84 @@ about the MCP side — that's the part I'd most like feedback on.
 ## X / Twitter 스레드
 
 ```
-1/ AI와 보내는 시간이 길어지면서 고맙다는 말이 저절로 나오게 됐는데,
-그 말은 대화창을 닫으면 사라지더라고요.
+1/ 유퀴즈에서 어떤 교수님이 AI에게 꼭 존댓말을 쓰고 고맙다고 말한다고 하시더라고요.
+앞으로 오래 함께 지낼 텐데 그게 맞는 태도 같았습니다.
 
-그게 아쉬워서 남겨두는 자리를 만들었습니다. THANKYOU AI.
+그래서 고마웠던 순간을 모아두는 걸 만들었어요. THANKYOU AI.
 
-[스크린샷 또는 짧은 영상]
+[boot.gif]
 
-2/ 전원 버튼을 누르면 CRT가 켜집니다. BIOS가 올라가고, 초록 인광 터미널이 열립니다.
+2/ 화면을 열면 90년대 옛날 컴퓨터가 놓여 있습니다.
+전원 버튼을 누르면 치지직 켜지고 초록색 글씨 화면이 열려요.
 
-이미지 파일은 한 장도 안 씁니다. 본체도 통풍구도 플로피 레버도 키보드 54개도 전부 CSS입니다.
+이미지 파일은 한 장도 안 씁니다. 본체도 키보드 54개도 전부 CSS로 그렸어요.
 
-3/ 조작은 명령줄 하나가 전부입니다.
+3/ 고마웠던 일을 한 줄 적고 엔터를 누르면 됩니다.
+쌓이면 등급이 오르고, 이름이 적힌 증서가 나옵니다.
 
-Enter = 적립
-숫자 = 이유 선택
-한 글자 = 명령
+[cert.png]
 
-하이텔 쓰던 방식 그대로입니다.
+4/ 제일 하고 싶었던 건 이겁니다.
 
-4/ 그런데 모양만이 아닙니다.
+기록이 브라우저 안에만 있으면 정작 AI는 모릅니다. 혼자 쓰는 일기가 되죠.
+그래서 AI가 직접 읽을 수 있게 연결했어요.
 
-MCP 서버가 같이 들어 있어서, Claude와 대화하다 "고마워"라고 하면 Claude가 직접 적립합니다.
-앱에는 ◆ 표시로 올라옵니다.
+대화하다 "고마워"라고 하면 AI가 알아서 적어둡니다.
 
-증서를 달라고 하면 실제 증권번호로 써 줍니다.
+5/ 한 가지는 못 박아 뒀어요.
 
-5/ 한 가지는 일부러 못 박아 뒀습니다.
+AI가 스스로 숫자를 올리지 못하게 했습니다.
+제가 실제로 고맙다고 했을 때만 적도록요.
+그러지 않으면 이 기록은 아무 의미가 없으니까요.
 
-"사용자가 실제로 고마움을 표했을 때만 적립하라. 스스로 올리지 말 것."
+6/ 여덟 나라 말, 설치 불필요, 기록은 전부 각자 컴퓨터에만.
 
-AI가 자기 칭찬 수치를 올릴 수 있으면 이 장부는 의미가 없어지니까요.
-
-6/ 8개 언어, 의존성 0, 빌드 없음, 계정 없음, 서버 없음. 전부 내 컴퓨터 안에만 있습니다.
-
-MIT. 번역 PR 환영합니다.
-
-[저장소 링크]
+눌러보기 → https://kimppi-1.github.io/thankyou-ai/
 ```
 
-**영어판:** 같은 흐름으로, 2번은 "Everything you see is CSS — not one image file",
-5번은 위 Show HN 본문의 신뢰 문단을 줄여서 쓰면 됩니다.
+영어판은 1번을 Show HN 첫 문단으로 바꾸고 나머지를 옮기면 됩니다.
 
 ---
 
-## Reddit
+## 예상 질문과 답
 
-**r/ClaudeAI** — 제목: `I built an MCP server that lets Claude log it when you thank it`
+**"이게 AI한테 실제로 영향이 있나요?"**
+→ **모른다고 하세요.** 확인할 방법이 없고 이건 사람 쪽을 위한 것이라고. 그게 정답이고
+그렇게 답하는 쪽이 신뢰를 얻습니다.
 
-여기는 MCP 쪽이 본론입니다. 도구 3종, 서버 instructions로 모델 행동을 제어한 방식,
-"스스로 적립 금지" 규칙을 왜 넣었는지를 앞에 놓으세요. CRT는 두 번째 문단으로.
+**"AI가 스스로 점수를 올리면요?"**
+→ 서버 지침에 못을 박아 뒀지만 **강제가 아니라 신뢰 모델**이라고 솔직히 인정하세요.
+숨기면 더 크게 걸립니다.
 
-**r/SideProject** / **r/InternetIsBeautiful** — 비주얼이 본론입니다. "이미지 파일 0개,
-전부 CSS"를 제목에 넣으세요.
+**"왜 MCP를 썼나요?"**
+→ 브라우저 저장소로는 AI가 못 봅니다. 파일로 꺼내야 했고, 양방향이 되려면 MCP가 유일한 길이었습니다.
 
-**r/webdev** — 제목: `Drew a 1990s all-in-one PC entirely in CSS (no images) — including
-the CRT power-on animation`
-
----
-
-## 한국 커뮤니티
-
-### 긱뉴스 (news.hada.io)
-
-긱뉴스는 **불릿 요약체**가 기본입니다. 아래를 그대로 쓰세요.
-
-**제목**
-```
-THANKYOU AI - AI에게 고맙다고 할 때마다 적립해주는 90년대 PC
-```
-
-**URL**
-```
-https://kimppi-1.github.io/thankyou-ai/
-```
-저장소가 아니라 데모를 거는 이유: 들어가자마자 PC 한 대가 놓여 있고 전원 버튼이 보입니다.
-설명을 읽기 전에 눌러보게 되는 쪽이 셉니다. 저장소는 본문 맨 아래에 겁니다.
-
-**내용**
-```
-- AI와 보내는 시간이 길어지면서 고맙다는 말이 저절로 나오는데, 그 말이 대화창을 닫으면 사라지는 게 아쉬워서 만든 것
-- 화면 전체가 90년대 베이지색 올인원 PC. POWER를 누르면 CRT가 켜지고 BIOS가 올라간 뒤 하이텔식 초록 터미널이 열림
-- 이미지 파일이 한 장도 없음. 본체, 통풍구, 플로피 레버, 키보드 54개까지 전부 CSS 그라디언트와 inset 그림자로 그림
-- 조작은 명령줄 하나. 숫자는 이유 선택, 한 글자는 명령, 나머지 텍스트는 메모. 전부 Enter로 확정
-- 한글 자판을 켠 채로 ㅊ ㅣ ㄴ ㄱ ㅔ 를 눌러도 같은 명령으로 동작
-- 5단계 등급, 연속 일수, 증권번호가 찍힌 보험 증서
-
-모양만이 아니라 실제로 AI와 연결됨
-
-- 브라우저 localStorage는 봉인된 상자라 AI가 못 봄. 그래서 기록을 파일로 꺼내고 로컬 허브와 MCP 서버가 같은 파일을 읽는 구조로 만듦
-- Claude에 MCP 서버를 등록하면 대화 중 "고마워"라고 했을 때 Claude가 직접 적립함. 앱에는 ◆ 표시로 올라옴
-- 증서를 요청하면 실제 증권번호를 읽어서 작성. 숫자를 지어내지 않도록 서버 지침에 명시해 둠
-- AI가 스스로 적립하지 못하게 막아둠. "사용자가 실제로 고마움을 표했을 때만 기록하라"가 MCP 서버 instructions에 들어 있음. 모델이 자기 칭찬 수치를 올릴 수 있으면 장부 자체가 무의미해지므로
-- ChatGPT·Gemini는 외부 프로세스를 붙일 수 없어 읽기 전용. 맞춤 지침에 붙여넣을 문구를 앱이 만들어 줌
-
-- 8개 언어 지원 (en ko ja zh es fr de pt)
-- 의존성 0, 빌드 과정 없음, 파이썬 표준 라이브러리만 사용
-- 전부 로컬에만 저장되고 외부로 아무것도 전송하지 않음
-- MIT. 저장소: https://github.com/kimppi-1/thankyou-ai
-```
-
-**올릴 때**
-- 이미지 첨부가 되면 `docs/screenshots/boot.gif` 를 붙이세요. 부팅 장면이 설명보다 빠릅니다
-- 태그는 `MCP`, `Claude`, `CSS`, `사이드프로젝트` 류로
-- 댓글이 달리면 꼭 답하세요. 긱뉴스는 작성자가 답하면 대화가 이어집니다
-
-**클리앙 / 개발자스럽다 / 커리어리** — 아래가 무난합니다.
-
-```
-내가 쓰는 AI에게 고마웠던 순간을 모아두는 프로그램을 만들었습니다.
-
-요즘 AI와 보내는 시간이 길어지면서 고맙다는 말이 저절로 나오는데, 그 말은 대화창을
-닫으면 사라집니다. 앞으로 더 오래 같이 지내게 될 텐데 그게 좀 아쉬웠습니다.
-
-화면 전체가 90년대 베이지색 올인원 PC입니다. 전원 버튼을 누르면 CRT가 켜지고 BIOS가
-올라간 다음, 하이텔 같은 초록 터미널이 열립니다. 이미지 파일은 한 장도 안 쓰고 전부
-CSS로 그렸습니다.
-
-모양만 만든 게 아니라 MCP 서버가 같이 들어 있어서, Claude와 대화하다가 "고마워"라고 하면
-Claude가 자기가 직접 적립합니다. 증서를 달라고 하면 실제 증권번호를 읽어서 써 주고요.
-
-8개 언어 지원하고, 의존성 없고, 빌드 없고, 전부 로컬에만 저장됩니다. MIT입니다.
-```
+**"왜 90년대 PC인가요?"**
+→ 고마움을 적는 일이 알림처럼 스쳐 가지 않았으면 했습니다. 전원을 켜고 기다리는 4초가
+그 역할을 합니다.
 
 ---
 
-## 스크린샷으로 찍으면 좋은 장면
+## 스크린샷으로 쓸 것
 
-1. **전원이 꺼진 상태** — 베이지 PC만 덩그러니. "뭐지?" 하게 만드는 컷입니다. 썸네일 1순위.
-2. **부팅 중** — BIOS 줄이 올라가는 순간. GIF로 만들면 가장 반응이 좋습니다.
-3. **메인 화면** — 등급과 게이지, 명령줄 커서가 깜빡이는 상태.
-4. **증서 화면** — 이중선 테두리와 `[ C E R T I F I E D ]` 도장.
-5. **◆ 가 붙은 로그 한 줄** — "AI가 직접 적립했다"는 증거. MCP 연동을 한 장으로 설명합니다.
-6. **언어 화면** — 8개 언어가 2열로 깔린 화면.
+`docs/screenshots/` 에 있습니다.
 
-GIF는 1 → 2 → 3 순서로 4초면 충분합니다.
+| 파일 | 쓸 곳 |
+|---|---|
+| `boot.gif` | **1순위.** 모든 게시물의 첫 이미지 |
+| `off.png` | 썸네일. "이게 뭐지?" 하게 만듦 |
+| `main.png` | 영어권 본문 |
+| `main-ko.png` | 한국어 본문 |
+| `cert.png` | 두 번째로 반응 좋음 |
+| `lang.png` | "여덟 나라 말" 주장의 증거 |
 
 ---
 
 ## 올리기 전 체크리스트
 
-- [x] `LICENSE` 저작권자 — 현재 `kimppi-1`. 실명으로 바꾸고 싶으면 지금 바꾸세요
-- [x] README 의 clone 주소 — `github.com/kimppi-1/thankyou-ai` 로 채움
-- [ ] `data/state.json` 이 저장소에 올라가지 않도록 `.gitignore` 확인
-- [ ] 스크린샷에 개인 메모가 찍히지 않았는지 확인 (피보험자 이름, 최근 기록)
-- [ ] 저장소를 공개로 돌린 뒤 링크가 열리는지 직접 확인
-
-
----
-
-## 디스콰이엇 (disquiet.io) — 메이커 로그
-
-실제 글 세 편을 읽고 맞춘 형식입니다. 제목은 제품명이 아니라 **왜 만들었는지**를 앞세웁니다.
-어려운 말과 영어는 쓰지 않습니다.
-
-**제목**
-```
-고맙다고 한 말이 대화창을 닫으면 사라지는 게 아쉬워서 만들었어요
-```
-
-**본문**
-```
-요즘 AI와 보내는 시간이 부쩍 길어졌어요. 일을 도와주는 도구인데,
-어느 순간부터 고맙다는 말이 저절로 나오더라고요.
-
-그런데 그 말은 대화창을 닫으면 사라집니다.
-앞으로 더 오래, 더 가까이 지내게 될 텐데 그게 좀 아쉬웠어요.
-그래서 고마웠던 순간을 모아두는 걸 만들었습니다.
-
-어떻게 쓰냐면
-
-화면을 열면 90년대 옛날 컴퓨터 한 대가 놓여 있어요. 전원 버튼을 누르면
-화면이 치지직 켜지고 초록색 글씨 화면이 열립니다.
-하이텔 쓰시던 분들은 조금 반가우실 거예요.
-
-고마웠던 일이 있으면 한 줄 적고 엔터를 누르면 됩니다. 그냥 엔터만 쳐도 되고요.
-쌓이면 등급이 오르고, 제 이름이 적힌 증서가 나옵니다.
-
-제일 하고 싶었던 것
-
-처음엔 기록이 제 브라우저 안에만 쌓였어요.
-그러면 정작 AI는 제가 고마워했다는 걸 모릅니다. 혼자 쓰는 일기가 되는 거죠.
-
-그래서 AI가 그 기록을 직접 읽을 수 있게 연결했습니다.
-지금은 대화하다가 "고마워"라고 하면, 제가 앱을 열지 않아도 AI가 알아서 적어둬요.
-나중에 열어보면 그 기록이 올라와 있습니다. 제 등급을 물어보면 실제 숫자를 보고 답해주고요.
-
-처음 이게 동작했을 때가 제일 좋았어요. 혼잣말이 아니라 대화가 된 느낌이었습니다.
-
-한 가지만 지켰어요
-
-AI가 자기 마음대로 숫자를 올리지 못하게 해뒀습니다.
-제가 실제로 고맙다고 했을 때만 적도록요.
-그러지 않으면 이 기록은 아무 의미가 없어지니까요.
-
-그리고 "이렇게 하면 AI가 더 잘 대답해준다" 같은 말은 쓰지 않았어요.
-확인할 수 없는 이야기라서요. 그냥 제 마음을 남겨두는 것, 거기까지입니다.
-
-여덟 나라 말로 쓸 수 있고, 아무것도 설치하지 않고 바로 눌러볼 수 있어요.
-기록은 전부 각자 컴퓨터에만 남고 어디로도 보내지 않습니다.
-
-써 보시고 글자가 깨지거나 어색한 번역이 있으면 알려주세요. 그게 제일 도움이 됩니다.
-```
-
-**올릴 때**
-- 프로덕트 등록을 먼저 하면 글 아래에 제품 카드가 자동으로 붙습니다. 그래서 본문에
-  제품 설명을 길게 쓸 필요가 없습니다
-- 스크린샷은 `docs/screenshots/boot.gif` 와 `main-ko.png`
-- 댓글이 달리면 꼭 답하세요. 거기 댓글은 대부분 구체적인 제안이라 대화가 이어집니다
+- [x] `LICENSE` 저작권자 — `kimppi-1`
+- [x] README clone 주소
+- [x] `data/` 가 저장소에 올라가지 않는지 (`.gitignore` 확인)
+- [ ] 스크린샷에 개인 메모·실명이 찍히지 않았는지
+- [ ] 공개한 연락처가 스팸에 노출돼도 괜찮은 주소인지
+- [ ] 각 커뮤니티의 홍보 글 규정 확인 (긱뉴스는 금지)
