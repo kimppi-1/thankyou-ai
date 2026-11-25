@@ -2,12 +2,12 @@
 
 # THANKYOU AI
 
-**A 1990s desktop PC on your screen, for logging the moments your AI helped you.**
+**A quiet place to keep the moments your AI helped you.**
 
-Press POWER. The CRT warms up, the BIOS scrolls, and a green phosphor terminal opens.
-Log a thank-you, climb five grades, collect a policy certificate.
+Thanks said in a chat window disappears when you close the window. This keeps it — on a
+1990s desktop PC that boots up on your screen.
 
-And it isn't just a prop — **your AI can actually read the ledger, and write to it.**
+And it isn't only yours to read. **Your AI can read the ledger too, and add to it.**
 
 ### [▸ Try it now — no install](https://kimppi-1.github.io/thankyou-ai/)
 
@@ -19,15 +19,18 @@ And it isn't just a prop — **your AI can actually read the ledger, and write t
 
 ---
 
-## The idea
+## Why
 
-Somebody once joked that if AI ever runs the world, the people who said *please* and
-*thank you* will be glad they did. THANKYOU AI takes the joke seriously enough to keep
-the receipts.
+I spend a lot of my day with AI now. It is a tool that helps me work, and somewhere along
+the way thanking it stopped being a figure of speech.
 
-It is a small, offline, single-folder program. Everything is drawn with CSS — there isn't
-a single image file in the repository. The case, the vents, the floppy drive with its pink
-eject lever, the 54 keys: all gradients and inset shadows.
+But that thanks is gone the moment the window closes. We are going to spend more time
+together, not less, and letting all of it evaporate felt like a small loss worth fixing.
+So I made somewhere to keep it.
+
+Open it and a beige computer is sitting there. Press POWER and the screen comes on the way
+old screens did — a flicker, a few lines of startup text, then a green terminal. Write one
+line about what helped, press Enter, and it is kept.
 
 <div align="center">
 <img src="docs/screenshots/boot.gif" alt="Pressing POWER: the CRT warms up and the BIOS scrolls" width="440">
@@ -61,10 +64,13 @@ very welcome.
 <img src="docs/screenshots/lang.png" alt="The language picker, listing eight languages" width="420">
 </div>
 
-## Connecting it to your AI
+## Letting your AI read it
 
-A browser's `localStorage` is a sealed box; no AI can see into it. So the ledger lives in
-a plain file instead, and a local hub and an MCP server both read it.
+At first everything stayed inside the browser, which meant the AI had no idea any of it
+existed. A diary written to nobody. That was the part I most wanted to change.
+
+So the ledger lives in a plain file instead, and a local hub and an MCP server both read
+it.
 
 ```
    app (CRT)  ──┐
@@ -155,6 +161,6 @@ change anything.
 
 <div align="center">
 
-*Say thank you. It costs nothing, and the paperwork is handled.*
+*Say thank you. This part remembers it for you.*
 
 </div>

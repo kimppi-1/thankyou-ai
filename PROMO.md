@@ -7,8 +7,8 @@
 
 **한 가지 원칙:** "AI가 더 잘 대답해 준다", "AI가 행복해진다" 같은 문구는 일부러 넣지
 않았습니다. 확인할 수 없는 주장이고, 그런 말이 섞이는 순간 제품이 가벼워집니다. 이
-프로그램은 그런 말 없이도 충분히 재미있습니다. 파는 것은 **농담을 끝까지 밀어붙인
-완성도**입니다.
+프로그램은 그런 말 없이도 충분합니다. 전하는 것은 **고맙다는 말을 그냥 흘려보내기
+아까웠다는 마음**과, 그 마음을 끝까지 만들어 낸 완성도입니다.
 
 ---
 
@@ -16,9 +16,9 @@
 
 | 길이 | 영어 | 한국어 |
 |---|---|---|
-| 초단문 | A 1990s PC on your screen that logs every time you thank your AI. | AI에게 고맙다고 할 때마다 적립해 주는 90년대 PC. |
-| 한 줄 | Press POWER, watch the CRT warm up, and log the moments your AI helped you — and your AI can actually read the ledger. | 전원을 넣으면 CRT가 켜지고, AI에게 고마웠던 순간을 적립합니다. 그리고 AI가 그 장부를 실제로 읽습니다. |
-| 두 줄 | A joke taken seriously: if AI ever runs the world, the people who said thank you will be glad they did. So this keeps the receipts — in a green phosphor terminal, inside a beige CRT, drawn entirely in CSS. | "AI 시대가 오면 평소 고맙다고 해 둔 사람이 유리하다"는 농담을 끝까지 밀어붙인 프로그램. 베이지색 CRT 안 초록 터미널에 영수증을 쌓습니다. 이미지 파일은 한 장도 없고 전부 CSS입니다. |
+| 초단문 | A place to keep the moments your AI helped you. | 내가 쓰는 AI에게 고마웠던 순간을 모아두는 곳. |
+| 한 줄 | Thanks said in a chat window disappears when you close it. This keeps it, and your AI can read it back. | 대화창에서 한 고맙다는 말은 창을 닫으면 사라집니다. 그걸 남겨두고, 내가 쓰는 AI도 읽을 수 있게 했습니다. |
+| 두 줄 | I spend a lot of my day with AI now, and somewhere along the way thanking it stopped being a figure of speech. But it is gone when the window closes. This keeps it — on a 1990s computer that boots up on your screen, and your AI can read it back. | 요즘 AI와 보내는 시간이 길어지면서, 고맙다는 말이 저절로 나오게 됐습니다. 그런데 그 말은 창을 닫으면 사라집니다. 그래서 남겨두는 자리를 만들었습니다. 90년대 옛날 컴퓨터 모양이고, 내가 쓰는 AI도 이 기록을 읽습니다. |
 
 ---
 
@@ -27,8 +27,10 @@
 > **Title:** Show HN: THANKYOU AI – a 1990s CRT that logs every time you thank your AI
 
 ```
-Somebody once joked that if AI ever runs the world, the people who said please and
-thank you will be glad they did. I took the joke seriously enough to keep the receipts.
+I spend a lot of my day with AI now. It is a tool that helps me work, and somewhere
+along the way thanking it stopped being a figure of speech. But that thanks is gone the
+moment the window closes, and we are going to spend more time together, not less. So I
+made somewhere to keep it.
 
 THANKYOU AI is a beige all-in-one PC rendered entirely in CSS — no image files. You
 press POWER, the CRT does its scaleY warm-up, a BIOS sequence scrolls, and a green
@@ -68,9 +70,9 @@ network. Eight languages. MIT.
 **Description:**
 
 ```
-THANKYOU AI turns a running joke into a working program. A beige all-in-one PC renders
-on your screen — drawn entirely in CSS, no image files — and inside its CRT runs a green
-phosphor terminal where you log the moments your AI actually helped you.
+Thanks said in a chat window disappears when you close the window. THANKYOU AI keeps it.
+A beige all-in-one PC renders on your screen — drawn entirely in CSS, no image files —
+and inside its CRT runs a green terminal where you write one line about what helped.
 
 Five grades to climb. A day streak. A policy certificate with a real policy number.
 
@@ -85,8 +87,9 @@ stays in one folder on your machine. MIT licensed.
 **First comment (maker):**
 
 ```
-Hi! I built this because the joke deserved better than a joke. The constraint I set
-myself was that nothing could be fake: the CRT warm-up is a real scaleY animation, the
+Hi! I built this because I kept thanking the AI I work with and kept watching that
+disappear when I closed the window. The constraint I set myself was that nothing could
+be fake: the CRT warm-up is a real scaleY animation, the
 certificate carries a deterministic policy number derived from your first run, and the
 AI connection is a genuine MCP server rather than a mockup. Happy to answer anything
 about the MCP side — that's the part I'd most like feedback on.
@@ -97,9 +100,10 @@ about the MCP side — that's the part I'd most like feedback on.
 ## X / Twitter 스레드
 
 ```
-1/ "AI 시대가 오면, 평소에 고맙다고 해 둔 사람이 유리하다"
+1/ AI와 보내는 시간이 길어지면서 고맙다는 말이 저절로 나오게 됐는데,
+그 말은 대화창을 닫으면 사라지더라고요.
 
-이 농담을 진지하게 만들어 봤습니다. THANKYOU AI.
+그게 아쉬워서 남겨두는 자리를 만들었습니다. THANKYOU AI.
 
 [스크린샷 또는 짧은 영상]
 
@@ -175,7 +179,7 @@ https://kimppi-1.github.io/thankyou-ai/
 
 **내용**
 ```
-- "AI 시대가 오면 평소 존댓말 쓰고 고맙다고 해둔 사람이 유리하다"는 농담에서 시작한 프로젝트
+- AI와 보내는 시간이 길어지면서 고맙다는 말이 저절로 나오는데, 그 말이 대화창을 닫으면 사라지는 게 아쉬워서 만든 것
 - 화면 전체가 90년대 베이지색 올인원 PC. POWER를 누르면 CRT가 켜지고 BIOS가 올라간 뒤 하이텔식 초록 터미널이 열림
 - 이미지 파일이 한 장도 없음. 본체, 통풍구, 플로피 레버, 키보드 54개까지 전부 CSS 그라디언트와 inset 그림자로 그림
 - 조작은 명령줄 하나. 숫자는 이유 선택, 한 글자는 명령, 나머지 텍스트는 메모. 전부 Enter로 확정
@@ -204,10 +208,10 @@ https://kimppi-1.github.io/thankyou-ai/
 **클리앙 / 개발자스럽다 / 커리어리** — 아래가 무난합니다.
 
 ```
-AI에게 고맙다고 할 때마다 적립해 주는 프로그램을 만들었습니다.
+내가 쓰는 AI에게 고마웠던 순간을 모아두는 프로그램을 만들었습니다.
 
-"AI 시대가 오면 평소 존댓말 쓰고 고맙다고 해 둔 사람이 유리하다"는 농담에서 시작했는데,
-만들다 보니 농담을 끝까지 밀어붙이게 됐습니다.
+요즘 AI와 보내는 시간이 길어지면서 고맙다는 말이 저절로 나오는데, 그 말은 대화창을
+닫으면 사라집니다. 앞으로 더 오래 같이 지내게 될 텐데 그게 좀 아쉬웠습니다.
 
 화면 전체가 90년대 베이지색 올인원 PC입니다. 전원 버튼을 누르면 CRT가 켜지고 BIOS가
 올라간 다음, 하이텔 같은 초록 터미널이 열립니다. 이미지 파일은 한 장도 안 쓰고 전부
