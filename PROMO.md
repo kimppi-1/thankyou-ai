@@ -123,11 +123,24 @@ https://github.com/kimppi-1/thankyou-ai
 
 ## Reddit
 
-**하루에 한 곳씩.** 각 서브레딧 `Rules` 를 먼저 읽으세요. 본문은 짧게, GIF 를 먼저.
+**하루에 한 곳씩.** 몰아서 올리면 스팸으로 잡힙니다.
+
+> **올리기 전에 반드시:** 각 서브레딧 오른쪽 `Rules` 를 읽으세요. 자동 접근이 막혀 있어
+> 대신 확인해 드릴 수 없습니다. 특히 이 세 가지를 보세요.
+> - 자기 홍보 허용 여부와 비율 제한 (9:1 규칙을 쓰는 곳이 있습니다)
+> - 글머리(flair) 필수 여부 — 안 달면 자동 삭제되는 곳이 많습니다
+> - 요일 제한 (예: "Showoff Saturday" 처럼 특정 요일만 허용)
+
+모든 글의 첫 이미지는 `boot.gif` 입니다.
+
+---
 
 ### r/SideProject
-> `I built a 1990s CRT that keeps every moment my AI helped me`
-
+**제목**
+```
+I built a 1990s CRT that keeps every moment my AI helped me
+```
+**본문**
 ```
 A professor on a TV interview said he always says please and thank you to AI - not as a
 joke, but as the right habit for people who will be living alongside it. I liked that,
@@ -143,25 +156,96 @@ conversation and it logs the entry itself, without me opening the app. The first
 that worked it stopped feeling like talking to myself.
 
 Eight languages, nothing to install, everything stays on your own machine.
+
+Demo: https://kimppi-1.github.io/thankyou-ai/
+Source: https://github.com/kimppi-1/thankyou-ai
 ```
 
+---
+
 ### r/ClaudeAI
-> `An MCP server that lets Claude log it when you thank it`
+**제목**
+```
+An MCP server that lets Claude log it when you thank it
+```
+**본문**
+```
+I kept thanking Claude and kept watching that disappear when I closed the window, so I
+built a ledger it can actually write to.
 
-MCP 쪽을 앞세우세요. 도구 3종(`get_insurance_status`, `record_thanks`, `issue_certificate`),
-서버 `instructions` 로 모델 행동을 제어한 방식, **"스스로 적립 금지" 규칙을 왜 넣었는지**를
-첫 문단에 두고 CRT 는 두 번째 문단으로 내립니다.
+Three tools:
 
-### r/webdev
-> `Drew a 1990s all-in-one PC entirely in CSS - no images, including the CRT power-on`
+- get_insurance_status - grade, total, day streak, recent entries
+- record_thanks - logs one expression of gratitude
+- issue_certificate - returns the real values to write a certificate from
 
-기술이 본론. 케이스·통풍구·플로피 레버·키보드 54개를 그라디언트와 inset 그림자로 만든 이야기,
-`scaleY` 수축으로 만든 CRT 켜짐/꺼짐.
+Say thank you in any conversation and Claude calls record_thanks itself. Ask what your
+grade is and it reads the actual number. Ask for the certificate and it writes one from
+a deterministic policy number instead of inventing one.
 
-### r/InternetIsBeautiful
-규칙상 설명 최소. 데모 링크만.
+The part I spent the most time on is the server's instructions block. It tells the model
+to log only when the user has genuinely expressed thanks, never on its own initiative,
+and never twice for the same thank-you. A model that can inflate its own gratitude score
+makes the ledger worthless, and the ledger is the entire point. It is a trust model, not
+an enforced one, and I would rather say that plainly than pretend otherwise.
+
+The front end is a 1990s beige PC drawn entirely in CSS with a green terminal inside the
+CRT. Entries Claude logged show up marked with a diamond, so you can see which side of
+the conversation each one came from.
+
+Python standard library only, no dependencies. install.py registers the server for you -
+it backs up your config and asks first. Eight languages.
+
+Demo: https://kimppi-1.github.io/thankyou-ai/
+Source: https://github.com/kimppi-1/thankyou-ai
+```
 
 ---
+
+### r/webdev
+**제목**
+```
+Drew a 1990s all-in-one PC entirely in CSS - no images, including the CRT power-on
+```
+**본문**
+```
+No image files in the repo. The beige case, the vents, the floppy drive with its pink
+eject lever, all 54 keys - gradients and inset shadows.
+
+Things that turned out simpler than expected:
+
+- The CRT power-on is just scaleY. It starts at 0.006 with brightness(3), snaps to 1,
+  dips opacity twice, settles. Four keyframes and it reads as a tube warming up.
+- Powering off is the same idea backwards: a white line scaled 70x vertically, collapsed
+  to 1, then scaled to 0 horizontally.
+- Vents are one repeating-linear-gradient. The keyboard needed real elements for the
+  rounding, so there are 54 divs generated in JS.
+- Scanlines are a repeating gradient over the screen with a slow steps(1) flicker.
+
+The hard part was not the chrome, it was the text. The screen is 348x272px, about 19
+lines, and it runs in eight languages. A fixed 56px label column fit Korean fine and
+split "POLICY NO" across two lines in English; French COUVERTURE broke it too. Testing
+in one language hides every one of those.
+
+The terminal inside is a working app rather than a mockup - the whole interface is one
+command line.
+
+Demo: https://kimppi-1.github.io/thankyou-ai/
+Source: https://github.com/kimppi-1/thankyou-ai
+```
+
+---
+
+### r/InternetIsBeautiful
+
+**가장 규정이 빡빡한 곳입니다.** 보통 가입 요구·앱·상업적 링크를 금지하고, 제목 형식도
+정해져 있습니다. 이 프로젝트는 가입 없는 웹사이트라 조건은 맞지만, **올리기 전에 규정을
+꼭 읽으세요.**
+
+**제목** (본문은 보통 비웁니다)
+```
+A 1990s computer that boots up in your browser, where you keep the moments your AI helped you
+```
 
 ## Product Hunt
 
