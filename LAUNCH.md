@@ -185,7 +185,7 @@ Logs the gratitude you express to your AI, on a 1990s CRT. The model reads its o
 > **반드시 `Free` 를 고르세요.** 검토가 2주 걸리는 대신 공짜입니다.
 > 유료는 24시간 검토·배지·검색 상위 노출인데, 지금 단계에 쓸 돈이 아닙니다.
 
-- [ ] 폼 제출 (2주 뒤 목록 확인)
+- [x] 폼 제출 완료 — 2주 내 심사, 승인되면 메일
 
 ---
 
@@ -238,7 +238,27 @@ Logs the gratitude you express to your AI, on a 1990s CRT. The model reads its o
 
 ---
 
-- [ ] ① 폼 제출이 가장 쉽습니다. 거기서 시작하세요
+- [x] ① 완료
+
+---
+
+### ④ 공식 MCP 레지스트리 — **지금은 하지 마세요**
+
+`registry.modelcontextprotocol.io` 는 MCP 공식 레지스트리입니다. 앞으로 클라이언트들이
+여기서 서버를 찾게 될 가능성이 높아서, 언젠가는 들어가야 합니다. 다만 **요건이 큽니다.**
+
+- 네임스페이스 소유 증명 → GitHub 계정으로 가능 (`io.github.kimppi-1/thankyou-ai`). 이건 쉬움
+- **패키지 소유 증명 → 공개 패키지 저장소에 먼저 올라가 있어야 함**
+  - 허용: npmjs.org · pypi.org · nuget · crates.io · Docker Hub/ghcr · GitHub 릴리스(MCPB)
+  - 지금은 "저장소 받아서 `python mcp_server.py` 실행" 방식이라 해당 없음
+- `server.json` 작성 + `mcp-publisher` CLI 로 발행
+
+**하려면 PyPI 패키징이 선행되어야 합니다.** `mcp_server.py` / `store.py` / `i18n_py.py` 를
+`pyproject.toml` 로 묶고 콘솔 스크립트를 만들어 올리는 일인데, 몇 시간 걸리고 패키지 이름을
+계속 관리해야 합니다. **별이 좀 붙고 쓰는 사람이 생긴 뒤에 하세요.** 그때가 되면
+`pip install thankyou-ai` 로 설치되는 게 오히려 자연스러워집니다.
+
+- [ ] 나중에 (PyPI 패키징이 선행 조건)
 
 ---
 
