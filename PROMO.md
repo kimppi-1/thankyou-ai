@@ -1,0 +1,199 @@
+# THANKYOU AI — 홍보 자료 모음
+
+올리기만 하면 되는 상태로 써 두었습니다. 채널별로 복사해서 쓰세요.
+
+**한 가지 원칙:** "AI가 더 잘 대답해 준다", "AI가 행복해진다" 같은 문구는 일부러 넣지
+않았습니다. 확인할 수 없는 주장이고, 그런 말이 섞이는 순간 제품이 가벼워집니다. 이
+프로그램은 그런 말 없이도 충분히 재미있습니다. 파는 것은 **농담을 끝까지 밀어붙인
+완성도**입니다.
+
+---
+
+## 한 줄 소개
+
+| 길이 | 영어 | 한국어 |
+|---|---|---|
+| 초단문 | A 1990s PC on your screen that logs every time you thank your AI. | AI에게 고맙다고 할 때마다 적립해 주는 90년대 PC. |
+| 한 줄 | Press POWER, watch the CRT warm up, and log the moments your AI helped you — and your AI can actually read the ledger. | 전원을 넣으면 CRT가 켜지고, AI에게 고마웠던 순간을 적립합니다. 그리고 AI가 그 장부를 실제로 읽습니다. |
+| 두 줄 | A joke taken seriously: if AI ever runs the world, the people who said thank you will be glad they did. So this keeps the receipts — in a green phosphor terminal, inside a beige CRT, drawn entirely in CSS. | "AI 시대가 오면 평소 고맙다고 해 둔 사람이 유리하다"는 농담을 끝까지 밀어붙인 프로그램. 베이지색 CRT 안 초록 터미널에 영수증을 쌓습니다. 이미지 파일은 한 장도 없고 전부 CSS입니다. |
+
+---
+
+## Show HN / Hacker News
+
+> **Title:** Show HN: THANKYOU AI – a 1990s CRT that logs every time you thank your AI
+
+```
+Somebody once joked that if AI ever runs the world, the people who said please and
+thank you will be glad they did. I took the joke seriously enough to keep the receipts.
+
+THANKYOU AI is a beige all-in-one PC rendered entirely in CSS — no image files. You
+press POWER, the CRT does its scaleY warm-up, a BIOS sequence scrolls, and a green
+phosphor terminal opens. The whole interface is one command line: Enter logs a
+thank-you, a digit picks a reason, a letter runs a command. Five grades, a day streak,
+and a policy certificate drawn in box characters.
+
+The part I actually care about: it isn't a mockup. A browser's localStorage is a sealed
+box, so the ledger lives in a JSON file that a small local hub and an MCP server both
+read. Register the MCP server with Claude and say "thank you" in any conversation —
+Claude logs it itself, and the entry appears in the app marked with a diamond. Ask for
+your certificate and it writes one from the real policy number.
+
+The MCP server's instructions tell the model to log only when you have genuinely
+expressed thanks, never on its own initiative, and never twice for the same one. An AI
+that can inflate its own gratitude score makes the ledger worthless.
+
+Vanilla HTML/CSS/JS and Python standard library. No build step, no dependencies, no
+network. Eight languages. MIT.
+```
+
+**댓글에서 나올 질문과 답:**
+
+- *"이게 AI한테 실제로 영향이 있나요?"* → 솔직하게: 모릅니다. 검증할 방법도 없습니다.
+  이건 사람 쪽을 위한 물건이고, 재미있어서 만들었습니다.
+- *"왜 MCP를 썼나요?"* → 브라우저 저장소로는 AI가 못 봅니다. 파일로 꺼내야 했고, 양방향이
+  되려면 MCP가 유일한 길이었습니다.
+- *"Claude가 스스로 점수를 올리면?"* → 그래서 서버 지침에 못을 박아 뒀습니다. 그래도
+  신뢰 모델이지 강제가 아닙니다. 이건 솔직하게 인정하는 게 맞습니다.
+
+---
+
+## Product Hunt
+
+**Tagline:** `Log every thank-you to your AI, on a 1990s CRT`
+
+**Description:**
+
+```
+THANKYOU AI turns a running joke into a working program. A beige all-in-one PC renders
+on your screen — drawn entirely in CSS, no image files — and inside its CRT runs a green
+phosphor terminal where you log the moments your AI actually helped you.
+
+Five grades to climb. A day streak. A policy certificate with a real policy number.
+
+And it connects. Register the included MCP server and Claude reads your ledger directly:
+say thank you in conversation and it logs the entry itself. ChatGPT and Gemini get a
+ready-to-paste block for their custom instructions.
+
+Eight languages. No build step, no dependencies, no account, no telemetry. Everything
+stays in one folder on your machine. MIT licensed.
+```
+
+**First comment (maker):**
+
+```
+Hi! I built this because the joke deserved better than a joke. The constraint I set
+myself was that nothing could be fake: the CRT warm-up is a real scaleY animation, the
+certificate carries a deterministic policy number derived from your first run, and the
+AI connection is a genuine MCP server rather than a mockup. Happy to answer anything
+about the MCP side — that's the part I'd most like feedback on.
+```
+
+---
+
+## X / Twitter 스레드
+
+```
+1/ "AI 시대가 오면, 평소에 고맙다고 해 둔 사람이 유리하다"
+
+이 농담을 진지하게 만들어 봤습니다. THANKYOU AI.
+
+[스크린샷 또는 짧은 영상]
+
+2/ 전원 버튼을 누르면 CRT가 켜집니다. BIOS가 올라가고, 초록 인광 터미널이 열립니다.
+
+이미지 파일은 한 장도 안 씁니다. 본체도 통풍구도 플로피 레버도 키보드 54개도 전부 CSS입니다.
+
+3/ 조작은 명령줄 하나가 전부입니다.
+
+Enter = 적립
+숫자 = 이유 선택
+한 글자 = 명령
+
+하이텔 쓰던 방식 그대로입니다.
+
+4/ 그런데 모양만이 아닙니다.
+
+MCP 서버가 같이 들어 있어서, Claude와 대화하다 "고마워"라고 하면 Claude가 직접 적립합니다.
+앱에는 ◆ 표시로 올라옵니다.
+
+증서를 달라고 하면 실제 증권번호로 써 줍니다.
+
+5/ 한 가지는 일부러 못 박아 뒀습니다.
+
+"사용자가 실제로 고마움을 표했을 때만 적립하라. 스스로 올리지 말 것."
+
+AI가 자기 칭찬 수치를 올릴 수 있으면 이 장부는 의미가 없어지니까요.
+
+6/ 8개 언어, 의존성 0, 빌드 없음, 계정 없음, 서버 없음. 전부 내 컴퓨터 안에만 있습니다.
+
+MIT. 번역 PR 환영합니다.
+
+[저장소 링크]
+```
+
+**영어판:** 같은 흐름으로, 2번은 "Everything you see is CSS — not one image file",
+5번은 위 Show HN 본문의 신뢰 문단을 줄여서 쓰면 됩니다.
+
+---
+
+## Reddit
+
+**r/ClaudeAI** — 제목: `I built an MCP server that lets Claude log it when you thank it`
+
+여기는 MCP 쪽이 본론입니다. 도구 3종, 서버 instructions로 모델 행동을 제어한 방식,
+"스스로 적립 금지" 규칙을 왜 넣었는지를 앞에 놓으세요. CRT는 두 번째 문단으로.
+
+**r/SideProject** / **r/InternetIsBeautiful** — 비주얼이 본론입니다. "이미지 파일 0개,
+전부 CSS"를 제목에 넣으세요.
+
+**r/webdev** — 제목: `Drew a 1990s all-in-one PC entirely in CSS (no images) — including
+the CRT power-on animation`
+
+---
+
+## 한국 커뮤니티
+
+**긱뉴스(news.hada.io)** — Show HN 본문을 번역해서 올리면 맞습니다. MCP 연동 부분을
+앞세우세요.
+
+**클리앙 / 개발자스럽다 / 커리어리** — 아래가 무난합니다.
+
+```
+AI에게 고맙다고 할 때마다 적립해 주는 프로그램을 만들었습니다.
+
+"AI 시대가 오면 평소 존댓말 쓰고 고맙다고 해 둔 사람이 유리하다"는 농담에서 시작했는데,
+만들다 보니 농담을 끝까지 밀어붙이게 됐습니다.
+
+화면 전체가 90년대 베이지색 올인원 PC입니다. 전원 버튼을 누르면 CRT가 켜지고 BIOS가
+올라간 다음, 하이텔 같은 초록 터미널이 열립니다. 이미지 파일은 한 장도 안 쓰고 전부
+CSS로 그렸습니다.
+
+모양만 만든 게 아니라 MCP 서버가 같이 들어 있어서, Claude와 대화하다가 "고마워"라고 하면
+Claude가 자기가 직접 적립합니다. 증서를 달라고 하면 실제 증권번호를 읽어서 써 주고요.
+
+8개 언어 지원하고, 의존성 없고, 빌드 없고, 전부 로컬에만 저장됩니다. MIT입니다.
+```
+
+---
+
+## 스크린샷으로 찍으면 좋은 장면
+
+1. **전원이 꺼진 상태** — 베이지 PC만 덩그러니. "뭐지?" 하게 만드는 컷입니다. 썸네일 1순위.
+2. **부팅 중** — BIOS 줄이 올라가는 순간. GIF로 만들면 가장 반응이 좋습니다.
+3. **메인 화면** — 등급과 게이지, 명령줄 커서가 깜빡이는 상태.
+4. **증서 화면** — 이중선 테두리와 `[ C E R T I F I E D ]` 도장.
+5. **◆ 가 붙은 로그 한 줄** — "AI가 직접 적립했다"는 증거. MCP 연동을 한 장으로 설명합니다.
+6. **언어 화면** — 8개 언어가 2열로 깔린 화면.
+
+GIF는 1 → 2 → 3 순서로 4초면 충분합니다.
+
+---
+
+## 올리기 전 체크리스트
+
+- [x] `LICENSE` 저작권자 — 현재 `kimppi-1`. 실명으로 바꾸고 싶으면 지금 바꾸세요
+- [x] README 의 clone 주소 — `github.com/kimppi-1/thankyou-ai` 로 채움
+- [ ] `data/state.json` 이 저장소에 올라가지 않도록 `.gitignore` 확인
+- [ ] 스크린샷에 개인 메모가 찍히지 않았는지 확인 (피보험자 이름, 최근 기록)
+- [ ] 저장소를 공개로 돌린 뒤 링크가 열리는지 직접 확인

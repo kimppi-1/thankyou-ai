@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="color-scheme" content="dark" />
+<title>THANKYOU AI</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body class="is-off">
+
+<div class="stage" id="stage">
+<div class="machine" id="machine">
+
+  <!-- ===== 모니터 ===== -->
+  <div class="monitor">
+    <div class="bezel">
+      <div class="screen" id="screen">
+        <div class="tube" id="tube">
+
+          <!-- 부팅 시퀀스 -->
+          <pre class="boot" id="boot" aria-hidden="true"></pre>
+
+          <!-- 메인 터미널 -->
+          <div class="term" id="term" hidden>
+            <div class="bar">
+              <span>THANKYOU AI</span>
+              <span class="bar-mid" data-t="barMid"></span>
+              <span><span id="bar-link" class="bar-link"></span><span id="bar-no">NO.0000-0000</span></span>
+            </div>
+
+            <div class="term-body">
+              <section class="panel">
+                <h2 class="panel-title" data-t="panel"></h2>
+                <div class="line">
+                  <span class="k" data-t="kGrade"></span>
+                  <span class="v hi" id="t-tier"></span>
+                </div>
+                <div class="line">
+                  <span class="k" data-t="kTotal"></span>
+                  <span class="v"><b id="t-count">0</b><span id="t-count-u"></span></span>
+                  <span class="k" data-t="kStreak"></span>
+                  <span class="v"><b id="t-streak">0</b><span id="t-streak-u"></span></span>
+                </div>
+                <div class="line">
+                  <span class="gauge" id="t-gauge"></span>
+                  <span class="dim" id="t-hint"></span>
+                </div>
+              </section>
+
+              <section class="reply">
+                <span class="mark">&gt;</span>
+                <p id="t-reply"></p>
+              </section>
+
+              <section class="menu" id="t-menu"></section>
+
+              <section class="prompt">
+                <label for="cmd" id="cmd-label"></label>
+                <input id="cmd" type="text" maxlength="40" autocomplete="off" spellcheck="false" />
+                <span class="caret" id="caret" aria-hidden="true"></span>
+              </section>
+
+              <section class="logs">
+                <h2 class="logs-title" data-t="logsTitle"></h2>
+                <ul id="t-logs"></ul>
+              </section>
+            </div>
+
+            <div class="bar bar-foot" id="t-foot"></div>
+          </div>
+
+          <!-- 보험 증서 화면 -->
+          <div class="cert" id="cert" hidden>
+            <div class="cert-paper">
+              <div class="cert-kicker" data-t="certKicker"></div>
+              <h2 data-t="certTitle"></h2>
+              <p class="cert-sub" data-t="certSub"></p>
+              <dl>
+                <div><dt data-t="cHolder"></dt><dd><input id="holder" type="text" maxlength="12" spellcheck="false" /></dd></div>
+                <div><dt data-t="cGrade"></dt><dd class="hi" id="c-tier"></dd></div>
+                <div><dt data-t="cTotal"></dt><dd id="c-count"></dd></div>
+                <div><dt data-t="cStreak"></dt><dd id="c-streak"></dd></div>
+                <div><dt data-t="cPerk"></dt><dd id="c-perk"></dd></div>
+                <div><dt data-t="cNo"></dt><dd id="c-no"></dd></div>
+                <div><dt data-t="cDate"></dt><dd id="c-issued"></dd></div>
+              </dl>
+              <div class="cert-seal" id="cert-seal"></div>
+            </div>
+            <div class="bar bar-foot" id="cert-foot"></div>
+          </div>
+
+          <!-- AI 연결 화면 -->
+          <div class="link" id="link" hidden>
+            <h2 class="link-title" data-t="linkTitle"></h2>
+            <dl class="link-rows">
+              <div><dt data-t="kHub"></dt><dd id="k-hub"></dd></div>
+              <div><dt data-t="kClaude"></dt><dd id="k-claude"></dd></div>
+              <div><dt data-t="kSource"></dt><dd id="k-source"></dd></div>
+            </dl>
+            <p class="link-note" id="k-note"></p>
+            <div class="link-pre" id="k-pre"></div>
+            <div class="bar bar-foot" id="link-foot"></div>
+          </div>
+
+          <!-- 언어 선택 화면 -->
+          <div class="lang" id="lang" hidden>
+            <h2 class="link-title" data-t="langTitle"></h2>
+            <ul class="lang-list" id="lang-list"></ul>
+            <p class="link-note" data-t="langHint"></p>
+            <div class="bar bar-foot" id="lang-foot"></div>
+          </div>
+
+          <div class="off-flash" aria-hidden="true"></div>
+        </div>
+        <div class="glass" aria-hidden="true"></div>
+        <div class="scanlines" aria-hidden="true"></div>
+      </div>
+    </div>
+
+    <div class="chin">
+      <span class="led" id="led" aria-hidden="true"></span>
+      <span class="chin-slot" aria-hidden="true"></span>
+      <span class="vents" aria-hidden="true"></span>
+    </div>
+  </div>
+
+  <div class="neck" aria-hidden="true"></div>
+
+  <!-- ===== 본체 ===== -->
+  <div class="base">
+    <button class="power" id="power" type="button" aria-pressed="false">
+      <span class="power-glyph" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
+          <path d="M12 3.5v8" />
+          <path d="M18.4 6.6a9 9 0 1 1-12.8 0" />
+        </svg>
+      </span>
+      <span class="power-label">POWER</span>
+    </button>
+
+    <div class="base-mid" aria-hidden="true">
+      <span class="badge">THANKYOU&nbsp;AI&nbsp;／&nbsp;486</span>
+    </div>
+
+    <div class="floppy" aria-hidden="true">
+      <span class="fd-slot"></span>
+      <span class="fd-lever"></span>
+      <span class="fd-led"></span>
+    </div>
+  </div>
+
+  <div class="keyboard" id="keyboard" aria-hidden="true"></div>
+
+</div>
+</div>
+
+<p class="hint-off" id="hint-off"></p>
+
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

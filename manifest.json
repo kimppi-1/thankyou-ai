@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "THANKYOU AI",
+  "version": "3.0.0",
+  "default_locale": "en",
+  "description": "A 1990s desktop PC on your screen. Log the moments your AI helped you, and collect grades and a policy certificate.",
+  "host_permissions": ["http://127.0.0.1:8765/*"],
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "THANKYOU AI"
+  }
+}

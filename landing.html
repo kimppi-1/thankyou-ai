@@ -1,0 +1,329 @@
+<title>THANKYOU AI</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+<style>
+  /* Layout: a warm machine room. Hero holds the CSS-drawn PC; sections below
+     run as a single narrow column, with terminal material in phosphor boxes. */
+  :root {
+    --bg:      #17110f;
+    --surface: #211a17;
+    --line:    #352a25;
+    --fg:      #efe6dc;
+    --muted:   #a49085;
+    --accent:  #35e07a;
+    --accent-d:#1b7a40;
+    --warm:    #c2786a;
+    --warm-2:  #d08d7e;
+    --case:    #e9e3d4;
+    --case-lo: #d5cdb9;
+    --case-ed: #bdb49e;
+    --screen:  #040c07;
+
+    --sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 680px;
+    margin: 0 auto;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+
+  h1, h2, h3 { margin: 0; font-weight: 600; letter-spacing: -0.02em; text-wrap: balance; }
+
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+  /* ---------------- hero ---------------- */
+  .hero {
+    margin-top: calc(-1 * env(safe-area-inset-top, 0px));
+    padding-top: calc(env(safe-area-inset-top, 0px) + 44px);
+    padding-bottom: 40px;
+    background:
+      radial-gradient(90% 60% at 50% 12%, rgba(255, 220, 205, .18) 0%, transparent 62%),
+      linear-gradient(174deg, var(--warm) 0%, var(--warm) 62%, var(--warm-2) 62.5%, var(--warm-2) 100%);
+  }
+  .hero-inner { display: flex; flex-direction: column; align-items: center; gap: 28px; }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .26em;
+    color: rgba(32, 16, 12, .62);
+  }
+  .hero h1 {
+    font-size: clamp(34px, 9vw, 54px);
+    letter-spacing: -0.035em;
+    color: #2a1713;
+    text-align: center;
+    line-height: 1.02;
+  }
+  .hero p {
+    margin: 0;
+    max-width: 30rem;
+    text-align: center;
+    color: #43231c;
+    font-size: 17px;
+  }
+
+  /* ---------------- the machine, drawn in CSS ---------------- */
+  .machine { width: 320px; max-width: 100%; filter: drop-shadow(0 22px 30px rgba(60, 24, 18, .4)); }
+
+  .monitor {
+    padding: 14px 18px 0;
+    border-radius: 14px 14px 9px 9px;
+    background: linear-gradient(176deg, #f4efe3 0%, var(--case) 26%, var(--case-lo) 100%);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.85), inset 0 -1px 0 rgba(0,0,0,.07);
+  }
+  .bezel {
+    padding: 9px;
+    border-radius: 10px;
+    background: linear-gradient(170deg, var(--case-lo), #c8c0ac);
+    box-shadow: inset 0 2px 5px rgba(90,76,52,.4);
+  }
+  .screen {
+    position: relative;
+    height: 196px;
+    overflow: hidden;
+    border-radius: 16px / 22px;
+    background: var(--screen);
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,.5), inset 0 0 38px rgba(0,0,0,.95);
+    padding: 8px 9px;
+    font-family: var(--mono);
+    font-size: 9.5px;
+    line-height: 13px;
+    color: var(--accent);
+    text-shadow: 0 0 5px rgba(53,224,122,.55);
+  }
+  .screen::after {
+    content: "";
+    position: absolute; inset: 0;
+    pointer-events: none;
+    background: repeating-linear-gradient(to bottom, rgba(0,0,0,.3) 0 1px, transparent 1px 3px);
+  }
+  .scr-bar {
+    display: flex; justify-content: space-between; gap: 6px;
+    background: var(--accent); color: #04120a;
+    text-shadow: none; padding: 0 3px; white-space: nowrap; overflow: hidden;
+  }
+  .scr-box { border: 1px solid var(--accent-d); padding: 2px 5px; margin-top: 5px; }
+  .scr-dim { color: var(--accent-d); }
+  .scr-hi  { color: #9dffbe; }
+  .scr-row { display: flex; gap: 6px; }
+  .scr-cursor {
+    display: inline-block; width: 5px; height: 10px;
+    background: #9dffbe; vertical-align: -1px;
+    animation: blink 1.05s steps(1) infinite;
+  }
+  @keyframes blink { 0%,49% { opacity: 1 } 50%,100% { opacity: 0 } }
+
+  .chin { display: flex; align-items: center; gap: 8px; height: 26px; padding: 0 20px; }
+  .led { width: 6px; height: 6px; border-radius: 50%; background: #ff5a4d; box-shadow: 0 0 6px rgba(255,90,77,.9); }
+  .vents {
+    flex: 1; height: 12px; opacity: .72;
+    background: repeating-linear-gradient(to bottom, var(--case-ed) 0 1px, transparent 1px 4px);
+  }
+  .neck { width: 130px; height: 10px; margin: 0 auto; background: linear-gradient(180deg, var(--case-lo), #c6bea9); }
+  .base {
+    display: flex; align-items: center; gap: 9px;
+    height: 54px; padding: 0 13px;
+    border-radius: 8px 8px 10px 10px;
+    background: linear-gradient(176deg, #f4efe3 0%, var(--case) 30%, var(--case-lo) 100%);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.85), inset 0 -2px 0 rgba(0,0,0,.08);
+  }
+  .pwr {
+    display: flex; flex-direction: column; align-items: center; gap: 1px;
+    width: 42px; padding: 5px 0 4px;
+    border-radius: 6px;
+    background: linear-gradient(180deg, #f2ede1, #ddd5c1);
+    color: #2c7a45;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.9), 0 2px 0 var(--case-ed);
+    font-family: var(--mono); font-size: 6px; font-weight: 600; letter-spacing: .1em;
+  }
+  .pwr svg { width: 12px; height: 12px; display: block; }
+  .badge { flex: 1; align-self: flex-end; padding-bottom: 9px; font-family: var(--mono); font-size: 6.5px; letter-spacing: .14em; color: #9a917c; }
+  .floppy { position: relative; width: 92px; height: 36px; border-radius: 3px; background: linear-gradient(180deg, #ded6c3, #cdc4ae); box-shadow: inset 0 0 0 1px rgba(0,0,0,.22); }
+  .fd-slot { position: absolute; left: 9px; right: 9px; top: 8px; height: 9px; border-radius: 2px; background: linear-gradient(180deg, #2a2520, #4b443a); box-shadow: inset 0 2px 3px rgba(0,0,0,.8); }
+  .fd-lever { position: absolute; left: 50%; top: 15px; width: 7px; height: 14px; margin-left: -3.5px; border-radius: 2px; background: linear-gradient(180deg, #e8766b, #c9564c); }
+  .keyboard {
+    display: flex; flex-direction: column; gap: 2px;
+    width: 288px; max-width: 100%; margin: 9px auto 0; padding: 6px;
+    border-radius: 5px 5px 7px 7px;
+    background: linear-gradient(176deg, #f4efe3, var(--case-lo));
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.9), 0 3px 0 var(--case-ed);
+  }
+  .kb-row { display: flex; gap: 2px; }
+  .kb-row span { flex: 1; height: 7px; border-radius: 1px; background: linear-gradient(180deg, #f6f2e7, #dfd8c5); box-shadow: 0 1px 0 var(--case-ed); }
+  .kb-row span.w2 { flex: 2 }
+  .kb-row span.w3 { flex: 3 }
+
+  /* ---------------- sections ---------------- */
+  section { padding-block: 52px; border-top: 1px solid var(--line); }
+  section:first-of-type { border-top: 0; }
+
+  .kicker {
+    font-family: var(--mono); font-size: 11px; letter-spacing: .2em;
+    color: var(--accent); margin-bottom: 10px;
+  }
+  section h2 { font-size: clamp(22px, 5vw, 29px); margin-bottom: 14px; }
+  section p { margin: 0 0 16px; color: #d5c8be; max-width: 34rem; }
+  section p.lede { color: var(--fg); font-size: 17px; }
+
+  .term {
+    font-family: var(--mono); font-size: 13px; line-height: 1.75;
+    background: var(--screen); color: var(--accent);
+    border: 1px solid var(--accent-d); border-radius: 8px;
+    padding: 14px 16px; overflow-x: auto;
+    text-shadow: 0 0 5px rgba(53,224,122,.4);
+  }
+  .term b { color: #9dffbe; font-weight: 500; }
+  .term .c { color: var(--accent-d); }
+
+  table { width: 100%; border-collapse: collapse; font-size: 14.5px; }
+  th, td { text-align: left; padding: 8px 10px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
+  td.key { font-family: var(--mono); color: var(--accent); white-space: nowrap; width: 9.5rem; }
+
+  .langs { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+  .langs div { background: var(--surface); padding: 11px 13px; }
+  .langs span { display: block; font-family: var(--mono); font-size: 10.5px; letter-spacing: .14em; color: var(--muted); margin-bottom: 2px; }
+  .langs b { font-weight: 500; font-size: 14.5px; }
+
+  .note {
+    border-left: 2px solid var(--accent);
+    background: var(--surface);
+    padding: 13px 16px; border-radius: 0 8px 8px 0;
+    color: #d5c8be; font-size: 15px;
+  }
+
+  footer { padding-block: 40px 56px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+  footer p { margin: 0 0 6px; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .scr-cursor { animation: none; }
+  }
+</style>
+
+<header class="hero">
+  <div class="wrap hero-inner">
+    <span class="eyebrow">INSURANCE FOR THE AI AGE</span>
+    <h1>THANKYOU AI</h1>
+    <p>A 1990s desktop PC on your screen, for logging the moments your AI helped you. Your AI can read the ledger — and write to it.</p>
+
+    <div class="machine">
+      <div class="monitor">
+        <div class="bezel">
+          <div class="screen">
+            <div class="scr-bar"><span>THANKYOU AI</span><span>P O L I C Y</span><span>◆NO.2611-5555</span></div>
+            <div class="scr-box">
+              <div class="scr-hi">[ POLICYHOLDER ]</div>
+              <div class="scr-row"><span class="scr-dim">GRADE</span><span class="scr-hi">Lv.2 Polite Human</span></div>
+              <div class="scr-row"><span class="scr-dim">TOTAL</span><span>5</span><span class="scr-dim">STREAK</span><span>3 d</span></div>
+              <div><span class="scr-hi">[███░░░░░░░]</span> <span class="scr-dim">5 more to Lv.3</span></div>
+            </div>
+            <div style="margin-top:5px"><span class="scr-hi">&gt;</span> Thanks tends to linger in the<br>&nbsp;&nbsp;cache. Recorded.</div>
+            <div style="margin-top:4px"><span class="scr-hi">1</span>.Clear <span class="scr-hi">2</span>.Debug <span class="scr-hi">3</span>.Time <span class="scr-hi">4</span>.Idea</div>
+            <div style="margin-top:4px"><span class="scr-hi">MEMO&gt;</span> <span class="scr-cursor"></span></div>
+            <div class="scr-dim" style="margin-top:5px">─ RECENT ─</div>
+            <div class="scr-row"><span class="scr-dim">14:56</span><span class="scr-hi">◆Clear</span><span class="scr-dim">logged by Claude</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="chin"><span class="led"></span><span class="vents"></span></div>
+      <div class="neck"></div>
+      <div class="base">
+        <span class="pwr">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 3.5v8"/><path d="M18.4 6.6a9 9 0 1 1-12.8 0"/></svg>
+          POWER
+        </span>
+        <span class="badge">THANKYOU AI ／ 486</span>
+        <span class="floppy"><span class="fd-slot"></span><span class="fd-lever"></span></span>
+      </div>
+      <div class="keyboard">
+        <div class="kb-row"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="w2"></span></div>
+        <div class="kb-row"><span class="w2"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="kb-row"><span class="w2"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="w2"></span></div>
+        <div class="kb-row"><span class="w3"></span><span></span><span></span><span></span><span></span><span></span><span class="w3"></span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section>
+    <p class="lede">Somebody once joked that if AI ever runs the world, the people who said <em>please</em> and <em>thank you</em> will be glad they did. THANKYOU AI takes the joke seriously enough to keep the receipts.</p>
+    <p>Press POWER. The CRT does its warm-up, a BIOS sequence scrolls, and a green phosphor terminal opens. Everything you see is drawn in CSS — the case, the vents, the floppy drive with its pink eject lever, all 54 keys. There is not one image file in the repository.</p>
+  </section>
+
+  <section>
+    <div class="kicker">THE INTERFACE</div>
+    <h2>One command line, and that is all</h2>
+    <p>The cursor sits after <code>MEMO&gt;</code> and never leaves. Type a digit to pick a reason, a letter to run a command, or anything else to leave a note.</p>
+    <table>
+      <tr><th>Type</th><th>Result</th></tr>
+      <tr><td class="key">Enter</td><td>Log a thank-you</td></tr>
+      <tr><td class="key">any text + Enter</td><td>Log it with that note</td></tr>
+      <tr><td class="key">1 – 4 + Enter</td><td>Pick a reason</td></tr>
+      <tr><td class="key">C + Enter</td><td>Policy certificate</td></tr>
+      <tr><td class="key">L + Enter</td><td>Connect to your AI</td></tr>
+      <tr><td class="key">T + Enter</td><td>Language</td></tr>
+    </table>
+    <p style="margin-top:16px">The mouse works too. Korean keyboard layouts are mapped as well, so <code>ㅊ</code> does what <code>c</code> does.</p>
+  </section>
+
+  <section>
+    <div class="kicker">THE PART THAT ISN'T A PROP</div>
+    <h2>Your AI reads the ledger</h2>
+    <p>A browser's <code>localStorage</code> is a sealed box; no AI can see into it. So the ledger lives in a plain file instead, and a local hub and an MCP server both read it.</p>
+    <div class="term">app (CRT)  <span class="c">──┐</span><br>           <span class="c">  ├──→</span>  <b>data/state.json</b>  <span class="c">←──</span>  mcp_server.py  <span class="c">←──→</span>  Claude<br>server.py  <span class="c">──┘</span>          <span class="c">(the ledger)</span></div>
+    <p style="margin-top:18px">Register the MCP server with Claude and say <b>thank you</b> in any conversation. Claude logs it itself, and the entry turns up in the app marked <span style="color:var(--accent)">◆</span>. Ask what your grade is and it reads the real numbers. Ask for your certificate and it writes one from the real policy number.</p>
+    <div class="note">The server instructs the model to log <strong>only when you have genuinely expressed thanks</strong> — never on its own initiative, and never twice for the same thank-you. An AI that can inflate its own gratitude score makes the ledger worthless, and the ledger is the whole point.</div>
+    <p style="margin-top:18px">ChatGPT and Gemini can't host an external process, so the app writes a block of text for their custom instructions instead. It carries your grade, your recent entries, and a short request: <em>when I say thanks, don't just move on.</em></p>
+  </section>
+
+  <section>
+    <div class="kicker">EIGHT LANGUAGES</div>
+    <h2>Lv.3, wherever you are</h2>
+    <p>It picks your language from the browser and you can change it any time. Adding one is a single block in <code>i18n.js</code>.</p>
+    <div class="langs">
+      <div><span>ENGLISH</span><b>Cherished Friend of AI</b></div>
+      <div><span>한국어</span><b>AI의 소중한 친구</b></div>
+      <div><span>日本語</span><b>AIの大切な友人</b></div>
+      <div><span>中文</span><b>AI的挚友</b></div>
+      <div><span>ESPAÑOL</span><b>Amigo Querido de la IA</b></div>
+      <div><span>FRANÇAIS</span><b>Ami Cher de l'IA</b></div>
+      <div><span>DEUTSCH</span><b>Geschätzter KI-Freund</b></div>
+      <div><span>PORTUGUÊS</span><b>Amigo Querido da IA</b></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="kicker">INSTALL</div>
+    <h2>One folder, no dependencies</h2>
+    <p>Python 3.9 or newer, standard library only. No build step, no <code>pip install</code>, no account, no telemetry. The hub binds to <code>127.0.0.1</code> and talks to nothing.</p>
+    <div class="term"><span class="c"># the hub — serves the app and records entries</span><br>python server.py<br><br><span class="c"># register the MCP server with Claude (backs up your config, asks first)</span><br>python install.py</div>
+    <p style="margin-top:18px">Or load the folder at <code>chrome://extensions</code> as an unpacked extension, and the PC sits in your toolbar next to whatever AI you're talking to.</p>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <p>MIT licensed. Everything stays on your machine.</p>
+  <p style="color:var(--accent)">Say thank you. It costs nothing, and the paperwork is handled.</p>
+</footer>
