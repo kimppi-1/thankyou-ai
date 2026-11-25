@@ -99,29 +99,64 @@ git add docs/screenshots; git commit -m "Add screenshots"; git push
 목록에 한 줄 들어가면 몇 달씩 사람이 들어옵니다. MCP 서버 목록은 지금 계속 커지는 중이라
 받아들여질 가능성도 높습니다.
 
-### 공통 방법 (GitHub 웹에서만, 설치 불필요)
+### 먼저, 이게 무슨 절차인가
 
-1. 대상 저장소의 `README.md` 를 연다
-2. 오른쪽 위 **연필 아이콘(✏)** → 자동으로 내 계정에 복사본(fork)이 생긴다
-3. 아래 지정된 분류를 찾아 **알파벳 순서 맞는 자리**에 한 줄 추가
-4. 맨 아래 `Commit changes` → **`Create a new branch`** 선택 → `Propose changes`
-5. `Create pull request` → 제목 입력 → 생성
+awesome 목록은 **남의 저장소**입니다. 내가 직접 고칠 수 없습니다.
+그래서 GitHub는 이런 방식을 씁니다.
 
-PR 제목은 셋 다 이걸로:
 ```
-Add THANKYOU AI
+   남의 저장소            내 계정의 복사본          남의 저장소
+   README.md     ──복사──▶  README.md    ──제안──▶  주인이 보고
+   (못 고침)              (여기선 고칠 수 있음)      수락하면 반영
 ```
 
-> **핵심 규칙:** 세 목록 모두 형식이 조금씩 다릅니다. 넣을 자리의 **위아래 줄을 그대로 흉내내는 게
-> 가장 안전합니다.** 아래 한 줄을 넣되, 주변 줄이 다른 표기를 쓰면 그쪽에 맞추세요.
+이 "제안"이 **Pull Request(PR)** 입니다. 한국어로는 보통 그냥 PR이라고 부릅니다.
+*"제가 이렇게 고쳐 봤는데, 받아주시겠어요?"* 하고 보내는 수정 제안서라고 보면 맞습니다.
+
+복사본을 만드는 걸 **fork(포크)** 라고 하는데, **연필 아이콘을 누르면 GitHub가 알아서 만들어 줍니다.**
+따로 할 일이 없습니다. 설치할 것도, 명령어도 없습니다. 브라우저만 있으면 됩니다.
+
+### 클릭 순서 (wong2 기준, 5분)
+
+1. https://github.com/wong2/awesome-mcp-servers/blob/main/README.md 접속
+
+2. 파일 내용 위쪽 오른편의 **연필 아이콘(✏)** 클릭
+   - 안 보이면 그 줄의 `⋯` 안에 `Edit` 이 있습니다
+
+3. 노란 안내문이 뜹니다 — *"You're making changes in a project you don't have write access to.
+   We've created a fork of this project for you…"*
+   → **정상입니다.** GitHub가 복사본을 만들었다는 뜻입니다. 그냥 진행하세요
+
+4. 글자를 고칠 수 있는 편집기가 열립니다. `Ctrl`+`F` 로 넣을 자리를 찾습니다
+
+5. 지정된 줄 위에 빈 줄을 만들고, 아래 마크다운 한 줄을 붙여넣습니다
+
+6. 오른쪽 위 초록색 **`Commit changes...`** 클릭
+
+7. 작은 창이 뜹니다
+   - 첫 칸(커밋 메시지)에 `Add THANKYOU AI`
+   - 아래 **`Create a new branch for this commit and start a pull request`** 가 선택돼 있는지 확인
+     (권한이 없으면 보통 자동으로 선택돼 있습니다)
+   - **`Propose changes`** 클릭
+
+8. *"Open a pull request"* 화면으로 넘어갑니다. 제목이 맞는지 보고
+   **`Create pull request`** 클릭
+
+9. 끝입니다. 이제 기다리면 됩니다. 주인이 수락(merge)하면 목록에 들어갑니다.
+   며칠에서 몇 주 걸릴 수 있고, 답이 없을 수도 있습니다. 재촉하지 마세요
+
+> **형식 규칙:** 넣을 자리의 **위아래 줄을 그대로 흉내내는 게 가장 안전합니다.**
+> 아래 한 줄을 넣되, 주변 줄이 다른 표기를 쓰면 그쪽에 맞추세요.
 
 ---
 
-### ① wong2/awesome-mcp-servers — 4,400★ · 가장 쉬움
+### ① wong2/awesome-mcp-servers — 4,400★ · **여기부터 하세요**
 
-- 분류: **`Community Servers`**
-- 자리: 알파벳 순. `T` 로 시작하는 항목들 사이
-- 기여 규칙 문서 없음. 형식만 맞추면 됩니다
+조건 없고, 분류가 `Community Servers` 하나라 성격을 안 따집니다. 현재 255개가 들어 있습니다.
+
+- 편집할 파일: https://github.com/wong2/awesome-mcp-servers/blob/main/README.md
+- 넣을 자리: 편집기에서 `Ctrl`+`F` 로 **`TikTok`** 을 찾아, 그 줄 **바로 위**
+  (알파벳상 `TeamCity` … `Text-To-GraphQL` **다음**, `TikTok` **앞**이 맞습니다)
 
 ```markdown
 - **[THANKYOU AI](https://github.com/kimppi-1/thankyou-ai)** - Logs the gratitude you express to your AI, on a 1990s CRT. The model reads its own ledger and records thanks itself.
@@ -131,19 +166,17 @@ Add THANKYOU AI
 
 ---
 
-### ② appcypher/awesome-mcp-servers — 5,800★
+### ② appcypher/awesome-mcp-servers — 5,800★ · **맞는 분류가 없음**
 
-- 분류: **`📝 Note Taking`**
-- 자리: **해당 분류의 맨 아래** (이 목록은 "bottom of the relevant category" 규칙)
-- 규칙: 건당 PR 하나, 철자 확인, 줄 끝 공백 제거
+처음엔 `📝 Note Taking` 을 생각했지만, 열어 보니 그 분류는 Notion·Obsidian·Apple Notes·Google Keep
+같은 **기존 메모 앱 연동**만 10개 들어 있고 전부 로고 이미지를 답니다. 성격이 다릅니다.
+다른 분류(AI Services, Art & Literature, Workflow Automation …)도 맞지 않고, `Other` 같은
+포괄 분류가 없습니다.
 
-```markdown
-- [THANKYOU AI](https://github.com/kimppi-1/thankyou-ai) - Logs the gratitude you express to your AI, on a 1990s CRT. The model reads its own ledger and records thanks itself.
-```
-> 이 목록은 항목에 로고 `<img>` 를 붙이는 줄이 섞여 있습니다. 없어도 되지만,
-> 주변이 전부 로고를 달고 있으면 맞춰 주는 편이 통과가 빠릅니다.
+**억지로 넣지 마세요.** awesome 목록은 분류가 안 맞으면 거절되고, 반복되면 계정 인상이 나빠집니다.
+굳이 하겠다면 새 분류를 제안하는 PR이 되는데, 그건 승인 가능성이 낮습니다.
 
-- [ ] PR 보냄
+- [ ] 건너뜀 (또는 나중에 맞는 분류가 생기면 재시도)
 
 ---
 
