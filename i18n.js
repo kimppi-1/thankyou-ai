@@ -36,6 +36,7 @@ const I18N = {
     logsTitle: "─ RECENT ─",
     logsEmpty: "  No entries yet — awaiting your first",
     logDefault: "thanks",
+    pickedReason: "Reason noted. Press Enter to log it, or write a line first.",
 
     foot: { log: "Log", cert: "Cert", link: "Link", lang: "Lang", snd: "Snd", reset: "Reset", off: "Off" },
     footClose: "Close", footCopy: "Copy",
@@ -114,6 +115,7 @@ const I18N = {
     logsTitle: "─ 최근 적립 내역 ─",
     logsEmpty: "  기록 없음 — 첫 적립을 기다리는 중",
     logDefault: "감사",
+    pickedReason: "이유를 골랐어요. 이제 Enter를 누르면 적립됩니다. 한 줄 적고 눌러도 되고요.",
 
     foot: { log: "적립", cert: "증서", link: "연결", lang: "언어", snd: "소리", reset: "초기화", off: "전원" },
     footClose: "닫기", footCopy: "복사",
@@ -192,6 +194,7 @@ const I18N = {
     logsTitle: "─ 最近の記録 ─",
     logsEmpty: "  記録なし — 最初の一件をお待ちしています",
     logDefault: "感謝",
+    pickedReason: "理由を選びました。Enter で記録します。一言添えてからでも大丈夫です。",
 
     foot: { log: "記録", cert: "証書", link: "接続", lang: "言語", snd: "音", reset: "初期化", off: "電源" },
     footClose: "閉じる", footCopy: "コピー",
@@ -270,6 +273,7 @@ const I18N = {
     logsTitle: "─ 最近记录 ─",
     logsEmpty: "  暂无记录 — 等待第一笔",
     logDefault: "感谢",
+    pickedReason: "已选好理由。按 Enter 就会记录，也可以先写一句再按。",
 
     foot: { log: "记录", cert: "证书", link: "连接", lang: "语言", snd: "声音", reset: "重置", off: "关机" },
     footClose: "关闭", footCopy: "复制",
@@ -348,6 +352,7 @@ const I18N = {
     logsTitle: "─ RECIENTE ─",
     logsEmpty: "  Sin registros — esperando el primero",
     logDefault: "gracias",
+    pickedReason: "Motivo elegido. Pulsa Enter para registrarlo, o escribe una linea antes.",
 
     foot: { log: "Reg", cert: "Cert", link: "Conex", lang: "Idio", snd: "Son", reset: "Borrar", off: "Apag" },
     footClose: "Cerrar", footCopy: "Copiar",
@@ -426,6 +431,7 @@ const I18N = {
     logsTitle: "─ RECENT ─",
     logsEmpty: "  Aucune entree — en attente de la premiere",
     logDefault: "merci",
+    pickedReason: "Raison notee. Appuyez sur Entree pour enregistrer, ou ecrivez une ligne avant.",
 
     foot: { log: "Noter", cert: "Cert", link: "Lien", lang: "Lang", snd: "Son", reset: "Reinit", off: "Arret" },
     footClose: "Fermer", footCopy: "Copier",
@@ -504,6 +510,7 @@ const I18N = {
     logsTitle: "─ ZULETZT ─",
     logsEmpty: "  Keine Eintraege — warte auf den ersten",
     logDefault: "Dank",
+    pickedReason: "Grund gewaehlt. Mit Enter buchen, oder vorher eine Zeile schreiben.",
 
     foot: { log: "Buchen", cert: "Police", link: "Link", lang: "Sprache", snd: "Ton", reset: "Reset", off: "Aus" },
     footClose: "Zu", footCopy: "Kopie",
@@ -582,6 +589,7 @@ const I18N = {
     logsTitle: "─ RECENTE ─",
     logsEmpty: "  Sem registos — a aguardar o primeiro",
     logDefault: "obrigado",
+    pickedReason: "Motivo escolhido. Prima Enter para registar, ou escreva uma linha antes.",
 
     foot: { log: "Reg", cert: "Cert", link: "Lig", lang: "Idio", snd: "Som", reset: "Limpar", off: "Desl" },
     footClose: "Fechar", footCopy: "Copiar",

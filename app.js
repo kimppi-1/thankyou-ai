@@ -647,6 +647,10 @@ function selectReason(n) {
   btn.setAttribute("aria-pressed", String(on));
   selectedTag = on ? tag : "";
   SFX.key();
+
+  // 이유만 고르면 아직 적립이 아니다. 처음 온 사람이 "아무 일도 안 일어난다"고
+  // 느끼지 않도록, 다음에 뭘 누르면 되는지 바로 알려 준다.
+  if (on) setReply(t("pickedReason"));
 }
 
 function announce(memo, levelUp) {
