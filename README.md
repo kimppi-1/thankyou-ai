@@ -13,9 +13,7 @@ And it isn't just a prop — **your AI can actually read the ledger, and write t
 
 [한국어](README.ko.md) · MIT licensed · No build step · No dependencies · No network
 
-<!-- 스크린샷을 docs/screenshots/ 에 넣고 아래 주석을 푸세요. LAUNCH.md 1단계 참고.
-![THANKYOU AI](docs/screenshots/main.png)
--->
+<img src="docs/screenshots/main.png" alt="THANKYOU AI running in a browser" width="520">
 
 </div>
 
@@ -31,20 +29,10 @@ It is a small, offline, single-folder program. Everything is drawn with CSS — 
 a single image file in the repository. The case, the vents, the floppy drive with its pink
 eject lever, the 54 keys: all gradients and inset shadows.
 
-```
-   ┌─────────────────────────────┐
-   │ THANKYOU AI   P O L I C Y   │  ◆ NO.2611-5555
-   │ ┌─[ POLICYHOLDER ]────────┐ │
-   │ │ GRADE  Lv.2 Polite Human│ │
-   │ │ TOTAL  5   STREAK  3 d  │ │
-   │ │ [███░░░░░░░] 5 more     │ │
-   │ └─────────────────────────┘ │
-   │ > Thanks tends to linger in │
-   │   the cache. Recorded.      │
-   │ 1.Clear 2.Debug 3.Time 4.Idea│
-   │ MEMO> ▌                     │
-   └─────────────────────────────┘
-```
+<div align="center">
+<img src="docs/screenshots/boot.gif" alt="Pressing POWER: the CRT warms up and the BIOS scrolls" width="440">
+<br><sub>Press POWER and wait four seconds.</sub>
+</div>
 
 ## Everything happens on one command line
 
@@ -68,6 +56,10 @@ English, 한국어, 日本語, 中文, Español, Français, Deutsch, Português.
 the browser and you can change it any time with `T`. Adding one is a single block in
 [`i18n.js`](i18n.js) plus the matching entry in [`i18n_py.py`](i18n_py.py) — pull requests
 very welcome.
+
+<div align="center">
+<img src="docs/screenshots/lang.png" alt="The language picker, listing eight languages" width="420">
+</div>
 
 ## Connecting it to your AI
 
@@ -96,6 +88,11 @@ Restart Claude completely. Now:
   not to invent any.
 
 Three tools are exposed: `get_insurance_status`, `record_thanks`, `issue_certificate`.
+
+<div align="center">
+<img src="docs/screenshots/cert.png" alt="The policy certificate screen" width="420">
+<br><sub>Press <code>C</code>. Claude writes one from these same values when you ask.</sub>
+</div>
 
 > The server instructs Claude to log **only when you have actually expressed thanks**,
 > never on its own initiative, and never twice for the same thank-you. The credibility of

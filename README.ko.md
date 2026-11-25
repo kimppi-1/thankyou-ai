@@ -6,6 +6,12 @@
 
 그리고 이건 모양만이 아닙니다. **적립한 기록을 실제로 내 AI에게 연결할 수 있습니다.**
 
+### [▸ 설치 없이 바로 써보기](https://kimppi-1.github.io/thankyou-ai/)
+
+<div align="center">
+<img src="docs/screenshots/main-ko.png" alt="THANKYOU AI 실행 화면" width="520">
+</div>
+
 ---
 
 ## 1. 그냥 쓰기 (연결 없이)

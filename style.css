@@ -639,7 +639,14 @@ body.is-reading .fd-led {
   gap: 8px;
   padding: .5px 0;
 }
-.cert dt { flex: none; width: 56px; color: var(--p-dim); }
+/* 라벨 칸은 가장 긴 언어에 맞춰 둔다. 영어 POLICY NO, 프랑스어 COUVERTURE,
+   포르투갈어 N APOLICE 가 56px 에서 두 줄로 쪼개졌다. nowrap 은 재발 방지용. */
+.cert dt {
+  flex: none;
+  width: 76px;
+  white-space: nowrap;
+  color: var(--p-dim);
+}
 .cert dd { flex: 1; margin: 0; text-align: right; }
 .cert dd input {
   width: 100%;
