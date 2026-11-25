@@ -116,9 +116,9 @@ awesome 목록은 **남의 저장소**입니다. 내가 직접 고칠 수 없습
 복사본을 만드는 걸 **fork(포크)** 라고 하는데, **연필 아이콘을 누르면 GitHub가 알아서 만들어 줍니다.**
 따로 할 일이 없습니다. 설치할 것도, 명령어도 없습니다. 브라우저만 있으면 됩니다.
 
-### 클릭 순서 (wong2 기준, 5분)
+### 클릭 순서 (PR을 받는 목록 기준 — 아래 ③에 해당)
 
-1. https://github.com/wong2/awesome-mcp-servers/blob/main/README.md 접속
+1. 대상 목록의 `README.md` 접속
 
 2. 파일 내용 위쪽 오른편의 **연필 아이콘(✏)** 클릭
    - 안 보이면 그 줄의 `⋯` 안에 `Edit` 이 있습니다
@@ -150,19 +150,42 @@ awesome 목록은 **남의 저장소**입니다. 내가 직접 고칠 수 없습
 
 ---
 
-### ① wong2/awesome-mcp-servers — 4,400★ · **여기부터 하세요**
+### ① wong2/awesome-mcp-servers — 4,400★ · **PR이 아니라 웹 폼입니다**
 
-조건 없고, 분류가 `Community Servers` 하나라 성격을 안 따집니다. 현재 255개가 들어 있습니다.
+이 목록은 README 맨 위에 이렇게 적어 두었습니다.
 
-- 편집할 파일: https://github.com/wong2/awesome-mcp-servers/blob/main/README.md
-- 넣을 자리: 편집기에서 `Ctrl`+`F` 로 **`TikTok`** 을 찾아, 그 줄 **바로 위**
-  (알파벳상 `TeamCity` … `Text-To-GraphQL` **다음**, `TikTok` **앞**이 맞습니다)
+> We do not accept PRs. Please submit your MCP on the website: https://mcpservers.org/submit
 
-```markdown
-- **[THANKYOU AI](https://github.com/kimppi-1/thankyou-ai)** - Logs the gratitude you express to your AI, on a 1990s CRT. The model reads its own ledger and records thanks itself.
+**PR을 보내면 닫힙니다.** 대신 폼을 채우면 되고, 오히려 PR보다 쉽습니다. 2분이면 됩니다.
+
+https://mcpservers.org/submit 에서 이렇게 채우세요.
+
+| 칸 | 넣을 값 |
+|---|---|
+| Server Name | `THANKYOU AI` |
+| Category | **`Other`** |
+| Short Description | 아래 한 줄 |
+| Repository, Website or Documentation | `https://github.com/kimppi-1/thankyou-ai` |
+| Official MCP Registry Name | 비워 두세요 (선택 항목) |
+| This server supports remote connections | **체크 해제.** 로컬 전용입니다 |
+| Contact Email | 연락 받을 주소. 공개되지는 않습니다 |
+
+Short Description:
+```
+Logs the gratitude you express to your AI, on a 1990s CRT. The model reads its own ledger and records thanks itself.
 ```
 
-- [ ] PR 보냄
+> **분류 선택:** 선택지는 Development / Productivity / Database / Search / Web Scraping /
+> File System / Version Control / Communication / Cloud Service / Cloud Storage / Marketing /
+> Finance / Design / Memory / Other 입니다.
+> `Memory` 가 눈에 띄겠지만 그건 모델용 범용 기억장치를 뜻하므로 오해를 삽니다.
+> `Productivity` 도 변명은 되지만, 정직하게는 **`Other`** 가 맞습니다.
+
+> **요금:** 맨 아래 `Free $0` 와 `Premium Submit $39` 가 있습니다.
+> **반드시 `Free` 를 고르세요.** 검토가 2주 걸리는 대신 공짜입니다.
+> 유료는 24시간 검토·배지·검색 상위 노출인데, 지금 단계에 쓸 돈이 아닙니다.
+
+- [ ] 폼 제출 (2주 뒤 목록 확인)
 
 ---
 
@@ -215,7 +238,7 @@ awesome 목록은 **남의 저장소**입니다. 내가 직접 고칠 수 없습
 
 ---
 
-- [ ] ①②는 조건 없음. 먼저 보내세요
+- [ ] ① 폼 제출이 가장 쉽습니다. 거기서 시작하세요
 
 ---
 
