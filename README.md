@@ -9,7 +9,13 @@ Log a thank-you, climb five grades, collect a policy certificate.
 
 And it isn't just a prop — **your AI can actually read the ledger, and write to it.**
 
+### [▸ Try it now — no install](https://kimppi-1.github.io/thankyou-ai/)
+
 [한국어](README.ko.md) · MIT licensed · No build step · No dependencies · No network
+
+<!-- 스크린샷을 docs/screenshots/ 에 넣고 아래 주석을 푸세요. LAUNCH.md 1단계 참고.
+![THANKYOU AI](docs/screenshots/main.png)
+-->
 
 </div>
 
