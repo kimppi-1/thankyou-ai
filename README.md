@@ -1,6 +1,7 @@
 <div align="center">
 
 # THANKYOU AI
+[![Listed on mcpservers.org](https://mcpservers.org/badge.svg)](https://mcpservers.org/servers/kimppi-1/thankyou-ai)
 
 **A quiet place to keep the moments your AI helped you.**
 
